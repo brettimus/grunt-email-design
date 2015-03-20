@@ -1,6 +1,8 @@
-# Switchboard's Grunt Email Design Workflow
+# Switchboard's Email Design Workflow
 
 Forked from Lee Munroe's [dopesauce workflow](https://github.com/leemunroe/grunt-email-design).
+
+## What's it do?
 
 This grunt task helps simplify things at the design stage.
 
@@ -12,13 +14,13 @@ This grunt task helps simplify things at the design stage.
 
 4. Sends a test email (optional - needs config)
 
-## Changes
+## Changes from the original.
 
-The original README is much more informative. You should read it.
+The [original README](https://github.com/leemunroe/grunt-email-design) is much more informative. You should read it.
 
 However, I did make a few changes.
 
-* All depedencies that are prefixed with `grunt` are automatically loaded into Grunt.
+* All depedencies that are prefixed with `grunt-` are automatically loaded into Grunt using [matchdep](https://www.npmjs.com/package/matchdep).
 
 * We are using [Ink by Zurb](https://github.com/zurb/ink). (Hence, I removed Lee's original `SASS` and layout.)
 
