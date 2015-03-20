@@ -1,0 +1,57 @@
+@import "./_vendor/ink";
+
+body,
+.body {
+  background: #f4f4f4;
+}
+
+table.body {
+  margin-top: 50px;
+}
+
+table.container {
+  /*background: #fff;*/
+}
+
+.container.preview-text td {
+  font-size: 11px;
+  opacity: .5;
+}
+
+td.wrapper.sb-first {
+  padding-top: 0;
+}
+
+.content-footer {
+  background: #fff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.content-header {
+  background: #494849;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  min-height: 100px;
+}
+  .content-header tr td {
+    vertical-align: middle;
+  }
+  .content-header h1 {
+    color: #fff;
+  }
+
+.content-body {
+  background: #fff;
+}
+
+.content-foot {
+  background: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.u-pad-top {
+  padding-top: 15px;
+}
