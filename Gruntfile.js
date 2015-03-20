@@ -19,13 +19,6 @@ module.exports = function(grunt) {
           }
         },
 
-        concat: {
-          dist: {
-            src: ['src/css/ink.css', 'src/project.js', 'src/outro.js'],
-            dest: 'dist/built.js',
-          },
-        },
-
         // Assembles your email content with html layout
         assemble: {
           options: {
