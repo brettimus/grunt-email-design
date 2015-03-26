@@ -1,6 +1,7 @@
 /**********************************************
 * Ink v1.0.5 - Copyright 2013 ZURB Inc        *
 **********************************************/
+/* NB: This file has been modified from the original for Switchboard's use */
 /* Client-specific Styles & Reset */
 #outlook a {
   padding: 0;
@@ -484,7 +485,7 @@ img.center {
 /* Typography */
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
   color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -644,7 +645,7 @@ table.medium-button td a,
 table.large-button td a {
   font-weight: bold;
   text-decoration: none;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, "Lucida Grande", sans-serif;
   color: #ffffff;
   font-size: 16px;
 }
@@ -903,7 +904,14 @@ body.outlook p {
     display: inherit !important;
   }
 }
-body,
+ol {
+  list-style-type: none;
+}
+
+.sb-plain-container {
+  margin: 0 !important;
+}
+
 .sb-body {
   background: #f4f4f4;
 }
@@ -946,6 +954,10 @@ td.wrapper.sb-first {
   background: #fff;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.u-center {
+  text-align: center;
 }
 
 .u-pad-top {
