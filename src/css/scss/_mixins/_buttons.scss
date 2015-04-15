@@ -1,0 +1,38 @@
+// MEM
+// scale-color($color, $saturation: -30%, $lightness: 20%, $alpha: 10%)
+
+@mixin sb-button($base-color) {
+  $base-lighter: lighten($base-color, 20%);
+  $base-lightest: lighten($base-color, 40%);
+
+  $base-darker: darken($base-color, 20%);
+
+  $hover-bg: scale-color($base-color, $saturation: -20%, $lightness: 80%, $alpha: 100%);
+
+  tr {
+    td {
+      background: #ffffff;
+      border: solid 1px $base-lighter;
+      border-radius: 8px;
+      a {
+        color: #666666;
+        &:visited,
+        &:focus {
+          color: #666666 !important; //necessary to override           
+        }
+      }
+    }
+  }
+
+  &:hover {
+    tr {
+      td {
+        background: $hover-bg !important; //necessary to override
+        border: solid 1px $base-darker;
+        a {
+          color: #444444 !important; //necessary to override
+        }
+      }
+    }
+  }
+}

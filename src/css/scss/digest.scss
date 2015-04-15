@@ -1,0 +1,94 @@
+@import "./variables";
+
+@import "./_vendor/ink";
+
+@import "./_patterns/body";
+@import "./_patterns/buttons";
+@import "./_patterns/footer_text";
+@import "./_patterns/preview_text";
+@import "./_patterns/utilities";
+
+@mixin highlight-category {
+  &.ask {
+    border-left: solid 3px $ask;
+  }
+  &.offer {
+    border-left: solid 3px $offer;
+  }
+}
+
+td.sb-post {
+  background: #ffffff;
+  border-bottom: solid 1px #dddddd;
+  border-left: solid 1px #dddddd;
+  border-right: solid 1px #dddddd;
+  border-top: solid 2px #dddddd;
+
+  .title {
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  h1 {
+
+  }
+
+  h2.title {
+    font-size: 24px;
+  }
+
+  .body {
+    color: #888;
+    @include highlight-category;
+  }
+  .footer {
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  // the top-level post
+  &.sb-post-main {
+    .title {
+      margin-bottom: 20px;
+      margin-top: 25px;
+    }
+    .footer {
+      margin-bottom: 25px;
+    }
+  }
+  &.sb-post-last {
+    h2.title {
+      color: #999999;
+      border-bottom: solid 2px #cccccc;
+      font-size: 22px;
+      padding-bottom: 7px;
+    }
+    h3.title {
+      font-size: 18px;
+      font-weight: 500;
+      @include highlight-category;
+
+      a {
+        color: #222222;
+        &:hover,
+        &:focus,
+        &:visited {
+          color: #444444 !important;
+          text-decoration: underline !important;
+        }
+      }   
+    }
+  }
+}
+
+// NOT IN USE
+// block grid progressive enhancement for mobile clients supporting media queries
+@media only screen and (max-width: 600px) {
+  table[class="container"] .block-grid td {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,9 @@
+.sb-body {
+  background: #f4f4f4;
+}
+
+table {
+  &.sb-body {
+    margin-top: 40px; // possible issue if email client strips body tag...
+  }
+}

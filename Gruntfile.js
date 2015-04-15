@@ -14,7 +14,7 @@ module.exports = function(grunt) {
               style: 'expanded'
             },
             files: {
-              'src/css/style.css': 'src/css/scss/style.scss'
+              'src/css/digest.css': 'src/css/scss/digest.scss'
             }
           }
         },
@@ -78,10 +78,6 @@ module.exports = function(grunt) {
           }
         },
 
-
-
-
-
         // Use Rackspace Cloud Files if you're using images in your email
         // cloudfiles: {
         //   prod: {
@@ -110,9 +106,6 @@ module.exports = function(grunt) {
         //     src: ['*.html']
         //   }
         // },
-
-
-
 
 
         // Send your email template to Litmus for testing

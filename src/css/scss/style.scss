@@ -1,4 +1,10 @@
+@import "./variables";
+
 @import "./_vendor/ink";
+
+@import "./_patterns/body";
+@import "./_patterns/preview_text";
+@import "./_patterns/utilities";
 
 
 // override OL to remove dumb and hard to style decimals...
@@ -10,26 +16,11 @@ ol {
   margin: 0 !important;
 }
 
-.sb-body {
-  background: #f4f4f4;
-}
-
-table.sb-body {
-  margin-top: 50px;
-}
-
 table.container {
   /*background: #fff;*/
 }
 
-.container {
-  &.sb-preview-text {
-    td {
-        font-size: 11px;
-        opacity: .5;
-    }
-  }
-}
+
 
 td.wrapper {
   &.sb-first {
@@ -60,12 +51,4 @@ td.wrapper {
   background: #fff;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-}
-
-.u-center {
-  text-align: center;
-}
-
-.u-pad-top {
-  padding-top: 15px;
 }

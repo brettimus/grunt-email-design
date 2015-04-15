@@ -1,0 +1,15 @@
+@import "../_mixins/buttons";
+
+table.button {
+  &.sb-button {
+    &.neutral {
+      @include sb-button(#dddddd);    
+    }
+    &.ask {
+      @include sb-button($ask);    
+    }
+    &.offer {
+      @include sb-button($offer)
+    }
+  }
+}
