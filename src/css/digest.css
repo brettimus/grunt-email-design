@@ -989,6 +989,10 @@ table.button.sb-button.offer:hover tr td a {
   font-size: 11px;
 }
 
+.u-text-large {
+  font-size: 18px;
+}
+
 .u-pad-top {
   padding-top: 15px;
 }
@@ -1059,10 +1063,17 @@ td.sb-post.sb-post-last h3.title a:hover, td.sb-post.sb-post-last h3.title a:foc
   text-decoration: underline !important;
 }
 
-@media only screen and (max-width: 600px) {
-  table[class="container"] .block-grid td {
-    width: 100% !important;
-  }
+.sb-cta {
+  margin-top: 20px;
+  text-align: center !important;
+}
+.sb-cta a {
+  color: #444444 !important;
+  font-size: 20px;
+  font-weight: 700;
+}
+.sb-cta a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=digest.css.map */
