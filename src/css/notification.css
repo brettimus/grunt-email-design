@@ -914,7 +914,7 @@ table.sb-body {
 
 table.button.sb-button.neutral tr td {
   background: #ffffff;
-  border: solid 1px white;
+  border: solid 1px #dddddd;
   border-radius: 8px;
 }
 table.button.sb-button.neutral tr td a {
@@ -924,8 +924,8 @@ table.button.sb-button.neutral tr td a:visited, table.button.sb-button.neutral t
   color: #666666 !important;
 }
 table.button.sb-button.neutral:hover tr td {
-  background: #f8f8f8 !important;
-  border: solid 1px #aaaaaa;
+  background: #eeeeee !important;
+  border: solid 1px #777777;
 }
 table.button.sb-button.neutral:hover tr td a {
   color: #444444 !important;
@@ -967,12 +967,122 @@ table.button.sb-button.offer:hover tr td a {
   color: #444444 !important;
 }
 
+.sb-small, td.sb-comment p.date .on, td.sb-comment p.name, td.sb-comment.history p.date .on, td.sb-comment.history p.name, td.sb-message p.date .on, td.sb-message p.name, td.sb-message.history p.date .on, td.sb-message.history p.name {
+  color: #999999;
+  font-size: 14px;
+}
+
+td.sb-comment {
+  padding: 20px 0;
+}
+td.sb-comment h2.lede {
+  margin-bottom: 24px;
+}
+td.sb-comment p {
+  margin: 0 10px;
+}
+td.sb-comment p.date {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+td.sb-comment p.name {
+  padding-bottom: 4px;
+}
+td.sb-comment p.name a {
+  color: #666666 !important;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+}
+td.sb-comment p.name a:hover, td.sb-comment p.name a:focus, td.sb-comment p.name a:active, td.sb-comment p.name a:visited {
+  color: #444444;
+}
+td.sb-comment p.name a:hover {
+  text-decoration: underline !important;
+}
+td.sb-comment p.body {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+td.sb-comment.history {
+  background: #f5f5f5;
+}
+td.sb-comment.history p {
+  margin-top: 8px;
+}
+td.sb-comment.history p.lede {
+  border-bottom: solid 1px #cccccc;
+  color: #aaaaaa;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+}
+td.sb-comment.history p.date {
+  color: #888888;
+  font-size: 14px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+td.sb-comment.history p.name {
+  margin-bottom: 0;
+  margin-top: 12px;
+  padding-bottom: 4px;
+}
+td.sb-comment.history p.name a {
+  color: #888888 !important;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+}
+td.sb-comment.history p.name a:hover, td.sb-comment.history p.name a:focus, td.sb-comment.history p.name a:active, td.sb-comment.history p.name a:visited {
+  color: #888888 !important;
+  text-decoration: none !important;
+}
+td.sb-comment.history p.name a.second {
+  color: #aaaaaa !important;
+}
+td.sb-comment.history p.name a.third {
+  color: #cccccc !important;
+}
+td.sb-comment.history p.name.second {
+  color: #aaaaaa !important;
+}
+td.sb-comment.history p.name.third {
+  color: #cccccc !important;
+}
+td.sb-comment.history p.subject {
+  color: #888888;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+td.sb-comment.history p.body {
+  border-bottom: solid 1px #dddddd;
+  color: #666666;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 0;
+  margin-bottom: 18px;
+  padding-top: 0;
+  padding-bottom: 12px;
+}
+td.sb-comment.history p.body.second {
+  color: #888888;
+}
+td.sb-comment.history p.body.third {
+  color: #aaaaaa;
+}
+
 .sb-cta {
   margin-top: 20px;
   text-align: center !important;
 }
 .sb-cta a {
-  color: #444444 !important;
+  color: #666666 !important;
   font-size: 20px;
   font-weight: 700;
 }
@@ -984,6 +1094,7 @@ table.button.sb-button.offer:hover tr td a {
 }
 
 .sb-footer-text p {
+  color: #888888;
   font-size: 11px;
   text-align: center;
 }
@@ -994,7 +1105,7 @@ table.button.sb-button.offer:hover tr td a {
   font-weight: 600;
 }
 
-.sb-small, td.sb-message p.date .on, td.sb-message p.name, td.sb-message.history p.date .on, td.sb-message.history p.name {
+.sb-small, td.sb-comment p.date .on, td.sb-comment p.name, td.sb-comment.history p.date .on, td.sb-comment.history p.name, td.sb-message p.date .on, td.sb-message p.name, td.sb-message.history p.date .on, td.sb-message.history p.name {
   color: #999999;
   font-size: 14px;
 }
@@ -1066,12 +1177,6 @@ td.sb-message.history p.name a:hover, td.sb-message.history p.name a:focus, td.s
   color: #888888 !important;
   text-decoration: none !important;
 }
-td.sb-message.history p.subject {
-  color: #888888;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
 td.sb-message.history p.body {
   color: #666666;
   font-size: 14px;
@@ -1079,38 +1184,39 @@ td.sb-message.history p.body {
   margin-bottom: 12px;
 }
 
-.sb-panel, td.sb-message {
+.sb-panel, td.sb-comment, td.sb-message {
   background: #ffffff;
   border-bottom: solid 1px #dddddd;
   border-left: solid 1px #dddddd;
   border-right: solid 1px #dddddd;
   border-top: solid 2px #dddddd;
 }
-.sb-panel .title, td.sb-message .title,
+.sb-panel .title, td.sb-comment .title, td.sb-message .title,
 .sb-panel .lede,
+td.sb-comment .lede,
 td.sb-message .lede {
   margin-bottom: 15px;
   margin-top: 20px;
 }
-.sb-panel h2.lede, td.sb-message h2.lede {
+.sb-panel h2.lede, td.sb-comment h2.lede, td.sb-message h2.lede {
   border-bottom: solid 2px #cccccc;
   color: #999999;
   font-size: 22px;
   padding-bottom: 7px;
 }
-.sb-panel h2.lede.smaller, td.sb-message h2.lede.smaller {
+.sb-panel h2.lede.smaller, td.sb-comment h2.lede.smaller, td.sb-message h2.lede.smaller {
   font-size: 16px;
 }
-.sb-panel.thick, td.thick.sb-message {
+.sb-panel.thick, td.thick.sb-comment, td.thick.sb-message {
   border-bottom: solid 2px #dddddd;
   border-left: solid 2px #dddddd;
   border-right: solid 2px #dddddd;
   border-top: solid 4px #dddddd;
 }
-.sb-panel.ask, td.ask.sb-message {
+.sb-panel.ask, td.ask.sb-comment, td.ask.sb-message {
   border-color: #ef412d;
 }
-.sb-panel.offer, td.offer.sb-message {
+.sb-panel.offer, td.offer.sb-comment, td.offer.sb-message {
   border-color: #5aa5be;
 }
 

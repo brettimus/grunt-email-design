@@ -1,0 +1,68 @@
+---
+layout: notification.hbs
+subject: James Messaged You On Switchboard
+---
+
+<table class="container">
+<tr>
+<td>
+  {{> reply-above }}
+  {{> comment }}
+  <table class="row">
+    <tr>
+      <td class="wrapper">
+        <table class="twelve columns">
+          <tr>
+            <td class="sb-comment history text-pad">
+              <p class="lede">Previous comments</p>
+              <p class="name">
+                <a href="">You</a> said
+              </p>
+              <p class="body">
+                &ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reiciendis veritatis enim incidunt ab eaque dolorem? Tenetur odio est magnam repellendus. Dignissimos odit doloribus, possimus voluptatibus vel sit aperiam nulla!&rdquo;
+              </p>
+              
+              <p class="name second">
+                <a href="">Someone Else</a> said
+              </p>
+              <p class="body second">
+                &ldquo;Lorem ipsum. Dignissimos odit doloribus, possimus voluptatibus!&rdquo;
+              </p>
+              
+              <p class="name third">
+                <a href="">Another</a> said
+              </p>
+              <p class="body third">
+                &ldquo;Lorem ipsum dolor sit amet dignissimos odit doloribus. Possimus voluptatibus vel sit aperiam nulla!&rdquo;
+              </p>
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+{{!--   <table class="row">
+    <tr>
+      <td class="wrapper">
+        <table class="twelve columns">
+          <tr>
+            <td class="sb-comment history text-pad">
+              <p class="name">
+                <a href="">James</a> said
+              </p>
+              <p class="body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reiciendis veritatis enim incidunt ab eaque dolorem? Tenetur odio est magnam repellendus. Dignissimos odit doloribus, possimus voluptatibus vel sit aperiam nulla!
+              </p>
+            </td>
+            <td class="expander"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table> --}}
+  {{> cta-post }}
+  {{> footer }}
+</td>
+</tr>
+</table>

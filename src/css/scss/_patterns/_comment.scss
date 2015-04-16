@@ -3,11 +3,15 @@
   font-size: 14px;
 }
 
-td.sb-message {
+td.sb-comment {
   @extend .sb-panel;
   padding: 20px 0;
+  h2 {
+    &.lede {
+      margin-bottom: 24px;
+    }
+  }
   p {
-    // margin: 0;
     margin: 0 10px;
     &.date {
       color: #666666;
@@ -20,12 +24,12 @@ td.sb-message {
     }
     &.name {
       @extend .sb-small;
-      margin-bottom: 16px;
-      padding-bottom: 12px;
+      padding-bottom: 4px;
       a {
         color: #666666 !important;
         font-size: 32px;
         font-weight: 700;
+        line-height: 42px;
 
         &:hover,
         &:focus,
@@ -39,28 +43,23 @@ td.sb-message {
       }
     }
 
-    &.subject {
-      color: #666666;
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
     &.body {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
     }
   }
 
   &.history {
     background: #f5f5f5;
     p {
+      margin-top: 8px;
       &.lede {
         border-bottom: solid 1px #cccccc;
         color: #aaaaaa;
         font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
         padding-bottom: 4px;
       }
       &.date {
@@ -72,14 +71,17 @@ td.sb-message {
           @extend .sb-small;
         }
       }
+      // this is all sorts of fucked
       &.name {
         @extend .sb-small;
         margin-bottom: 0;
+        margin-top: 12px;
         padding-bottom: 4px;
         a {
           color: #888888 !important;
           font-size: 22px;
           font-weight: 400;
+          line-height: 27px;
 
           &:hover,
           &:focus,
@@ -87,14 +89,48 @@ td.sb-message {
           &:visited {
             color: #888888 !important;
             text-decoration: none !important;
-          }      
+          }
+
+          &.second {
+            color: #aaaaaa !important;
+          }
+
+          &.third {
+            color: #cccccc !important;            
+          }     
         }
+        &.second {
+          color: #aaaaaa !important;
+        }
+
+        &.third {
+          color: #cccccc !important;            
+        }  
+      }
+
+      &.subject {
+        color: #888888;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
       }
       &.body {
+        border-bottom: solid 1px #dddddd;
         color: #666666;
         font-size: 14px;
         line-height: 19px;
-        margin-bottom: 12px;
+        margin-top: 0;
+        margin-bottom: 18px;
+        padding-top: 0;
+        padding-bottom: 12px;
+
+        &.second {
+          color: #888888;
+        }
+
+        &.third {
+          color: #aaaaaa;            
+        } 
       }
     }
   }

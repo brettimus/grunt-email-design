@@ -914,7 +914,7 @@ table.sb-body {
 
 table.button.sb-button.neutral tr td {
   background: #ffffff;
-  border: solid 1px white;
+  border: solid 1px #dddddd;
   border-radius: 8px;
 }
 table.button.sb-button.neutral tr td a {
@@ -924,8 +924,8 @@ table.button.sb-button.neutral tr td a:visited, table.button.sb-button.neutral t
   color: #666666 !important;
 }
 table.button.sb-button.neutral:hover tr td {
-  background: #f8f8f8 !important;
-  border: solid 1px #aaaaaa;
+  background: #eeeeee !important;
+  border: solid 1px #777777;
 }
 table.button.sb-button.neutral:hover tr td a {
   color: #444444 !important;
@@ -972,7 +972,7 @@ table.button.sb-button.offer:hover tr td a {
   text-align: center !important;
 }
 .sb-cta a {
-  color: #444444 !important;
+  color: #666666 !important;
   font-size: 20px;
   font-weight: 700;
 }
@@ -984,6 +984,7 @@ table.button.sb-button.offer:hover tr td a {
 }
 
 .sb-footer-text p {
+  color: #888888;
   font-size: 11px;
   text-align: center;
 }

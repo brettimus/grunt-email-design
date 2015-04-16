@@ -1,9 +1,7 @@
-@import "../_mixins/buttons";
-
 table.button {
   &.sb-button {
     &.neutral {
-      @include sb-button(#dddddd);    
+      @include sb-button(#aaaaaa);    
     }
     &.ask {
       @include sb-button($ask);    
