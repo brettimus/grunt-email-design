@@ -1,0 +1,51 @@
+
+td.sb-post {
+  @extend .sb-panel;
+
+  h2.title {
+    font-size: 24px;
+  }
+  .body {
+    color: #888;
+    @include highlight-category;
+  }
+  .footer {
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    text-align: right;
+  }
+
+  // the top-level post
+  &.sb-post-main {
+    .title {
+      margin-bottom: 20px;
+      margin-top: 25px;
+    }
+    .footer {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+td.sb-post-list {
+  @extend .sb-panel;
+
+  h3.title {
+    font-size: 18px;
+    font-weight: 500;
+    @include highlight-category;
+
+    a {
+      color: #222222;
+      &:hover,
+      &:focus,
+      &:visited {
+        color: #444444 !important;
+        text-decoration: underline !important;
+      }
+    }   
+  }
+}

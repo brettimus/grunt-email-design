@@ -1,0 +1,8 @@
+@mixin highlight-category {
+  &.ask {
+    border-left: solid 3px $ask;
+  }
+  &.offer {
+    border-left: solid 3px $offer;
+  }
+}

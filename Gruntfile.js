@@ -14,7 +14,9 @@ module.exports = function(grunt) {
               style: 'expanded'
             },
             files: {
-              'src/css/digest.css': 'src/css/scss/digest.scss'
+              'src/css/digest.css': 'src/css/scss/digest.scss',
+              'src/css/notification.css': 'src/css/scss/notification.scss',
+              'src/css/style.css': 'src/css/scss/style.scss'
             }
           }
         },
@@ -23,7 +25,8 @@ module.exports = function(grunt) {
         assemble: {
           options: {
             layoutdir: 'src/layouts',
-            flatten: true
+            flatten  : true,
+            partials : 'src/partials/**/*.hbs'
           },
           pages: {
             src: ['src/emails/*.hbs'],

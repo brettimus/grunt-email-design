@@ -1,6 +1,6 @@
-@import "./variables";
-
 @import "./_vendor/ink";
+
+@import "./variables";
 
 @import "./_mixins/buttons";
 @import "./_mixins/highlight";
@@ -10,7 +10,8 @@
 @import "./_patterns/buttons";
 @import "./_patterns/cta";
 @import "./_patterns/footer";
+@import "./_patterns/message";
 @import "./_patterns/panel";
-@import "./_patterns/post";
 @import "./_patterns/preview";
+@import "./_patterns/reply";
 @import "./_patterns/utilities";

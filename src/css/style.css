@@ -909,13 +909,15 @@ body.outlook p {
 }
 
 table.sb-body {
-  margin-top: 40px;
+  padding-top: 15px;
 }
 
 .container.sb-preview-text td,
 .row.sb-preview-text td {
   color: #cccccc;
   font-size: 11px;
+  padding-bottom: 0;
+  padding-top: 20px;
 }
 
 .u-text-center {
@@ -924,6 +926,10 @@ table.sb-body {
 
 .u-text-small {
   font-size: 11px;
+}
+
+.u-text-large {
+  font-size: 18px;
 }
 
 .u-pad-top {
