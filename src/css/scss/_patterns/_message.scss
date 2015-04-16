@@ -90,6 +90,13 @@ td.sb-message {
           }      
         }
       }
+      &.subject {
+        color: #888888;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        text-align: center;
+      }
       &.body {
         color: #666666;
         font-size: 14px;

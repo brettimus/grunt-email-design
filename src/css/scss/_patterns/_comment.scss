@@ -7,8 +7,17 @@ td.sb-comment {
   @extend .sb-panel;
   padding: 20px 0;
   h2 {
+    margin: 0 10px;
+    span {
+      color: #999999;
+      display: block;
+      font-size: 16px;
+    }
     &.lede {
-      margin-bottom: 24px;
+      border-bottom-width: 0 !important;
+      color: #666666 !important;
+      margin-bottom: 0;
+      margin-top: 18px;
     }
   }
   p {
@@ -53,14 +62,20 @@ td.sb-comment {
   &.history {
     background: #f5f5f5;
     p {
-      margin-top: 8px;
+      padding: 8px 0 12px 0;
       &.lede {
-        border-bottom: solid 1px #cccccc;
+        border-bottom: solid 0 #cccccc;
         color: #aaaaaa;
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 0;
+        margin-top: 0;
         padding-bottom: 4px;
+        span {
+          color: #bbbbbb;
+          display: block;
+          font-size: 11px;
+        }
       }
       &.date {
         color: #888888;
@@ -74,9 +89,9 @@ td.sb-comment {
       // this is all sorts of fucked
       &.name {
         @extend .sb-small;
-        margin-bottom: 0;
         margin-top: 12px;
-        padding-bottom: 4px;
+        margin-bottom: 0;
+        padding-bottom: 0;
         a {
           color: #888888 !important;
           font-size: 22px;
@@ -89,22 +104,20 @@ td.sb-comment {
           &:visited {
             color: #888888 !important;
             text-decoration: none !important;
-          }
-
-          &.second {
-            color: #aaaaaa !important;
-          }
-
-          &.third {
-            color: #cccccc !important;            
-          }     
+          }  
         }
         &.second {
           color: #aaaaaa !important;
+          a {
+            color: #999999 !important;
+          }
         }
 
         &.third {
-          color: #cccccc !important;            
+          color: #cccccc !important;
+          a {
+            color: #bbbbbb !important;
+          }           
         }  
       }
 
@@ -115,22 +128,27 @@ td.sb-comment {
         margin-bottom: 8px;
       }
       &.body {
-        border-bottom: solid 1px #dddddd;
+        // border-bottom: solid 0 #dddddd;
         color: #666666;
         font-size: 14px;
         line-height: 19px;
         margin-top: 0;
-        margin-bottom: 18px;
+        margin-bottom: 0;
         padding-top: 0;
-        padding-bottom: 12px;
-
+        padding-bottom: 18px;
         &.second {
           color: #888888;
         }
 
         &.third {
-          color: #aaaaaa;            
+          color: #aaaaaa;   
         } 
+      }
+      &.ellipsis {
+        color: #aaaaaa;
+        font-size: 22px;
+        padding: 12px 0 16px;
+        text-align: center;
       }
     }
   }
