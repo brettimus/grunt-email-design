@@ -21,4 +21,31 @@
       }
     }
   }
+
+  &.filled {
+    tr {
+      td {
+        background: $base-color;
+        border: solid 1px $base-darker;
+        a {
+          color: #eeeeee;
+          &:visited,
+          &:focus {
+            color: #eeeeee !important; //necessary to override           
+          }
+        }
+      }
+    }
+
+    &:hover {
+      tr {
+        td {
+          background: $base-darker !important; //necessary to override
+          a {
+            color: #ffffff !important; //necessary to override
+          }
+        }
+      }
+    }
+  }
 }

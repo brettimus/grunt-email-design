@@ -932,6 +932,14 @@ table.sb-body {
   font-size: 18px;
 }
 
+.u-text-ask {
+  color: #ef412d;
+}
+
+.u-text-offer {
+  color: #5aa5be;
+}
+
 .u-pad-top {
   padding-top: 15px;
 }

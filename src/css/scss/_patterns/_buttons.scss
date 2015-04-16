@@ -27,16 +27,13 @@
   }
 
   &.round {
-    
+    border-radius: 20px;
   }
 }
 
 table.button {
   &.sb-button {
     @extend %button;
-    // &.neutral {
-    //   @include sb-button(#aaaaaa);    
-    // }
     &.ask {
       @include sb-button($ask);    
     }

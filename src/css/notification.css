@@ -930,6 +930,9 @@ table.button.sb-button:hover tr td {
 table.button.sb-button:hover tr td a {
   color: #444444 !important;
 }
+table.round.button.sb-button {
+  border-radius: 20px;
+}
 
 table.button.sb-button.ask tr td {
   border: solid 1px #f6978c;
@@ -938,12 +941,44 @@ table.button.sb-button.ask:hover tr td {
   background: #f8dcd9 !important;
   border: solid 1px #a91d0d;
 }
+table.button.sb-button.ask.filled tr td {
+  background: #ef412d;
+  border: solid 1px #a91d0d;
+}
+table.button.sb-button.ask.filled tr td a {
+  color: #eeeeee;
+}
+table.button.sb-button.ask.filled tr td a:visited, table.button.sb-button.ask.filled tr td a:focus {
+  color: #eeeeee !important;
+}
+table.button.sb-button.ask.filled:hover tr td {
+  background: #a91d0d !important;
+}
+table.button.sb-button.ask.filled:hover tr td a {
+  color: #ffffff !important;
+}
 table.button.sb-button.offer tr td {
   border: solid 1px #a3cddb;
 }
 table.button.sb-button.offer:hover tr td {
   background: #e0ecf0 !important;
   border: solid 1px #326c80;
+}
+table.button.sb-button.offer.filled tr td {
+  background: #5aa5be;
+  border: solid 1px #326c80;
+}
+table.button.sb-button.offer.filled tr td a {
+  color: #eeeeee;
+}
+table.button.sb-button.offer.filled tr td a:visited, table.button.sb-button.offer.filled tr td a:focus {
+  color: #eeeeee !important;
+}
+table.button.sb-button.offer.filled:hover tr td {
+  background: #326c80 !important;
+}
+table.button.sb-button.offer.filled:hover tr td a {
+  color: #ffffff !important;
 }
 
 .sb-small, td.sb-comment p.date .on, td.sb-comment p.name, td.sb-comment.history p.date .on, td.sb-comment.history p.name, td.sb-message p.date .on, td.sb-message p.name, td.sb-message.history p.date .on, td.sb-message.history p.name {
@@ -1063,7 +1098,7 @@ td.sb-comment.history p.body {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
-  padding-bottom: 18px;
+  padding-bottom: 6px;
 }
 td.sb-comment.history p.body.second {
   color: #888888;
@@ -1256,6 +1291,14 @@ td.sb-message .lede {
 
 .u-text-large {
   font-size: 18px;
+}
+
+.u-text-ask {
+  color: #ef412d;
+}
+
+.u-text-offer {
+  color: #5aa5be;
 }
 
 .u-pad-top {
