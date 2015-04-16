@@ -1,8 +1,42 @@
+%button {
+  tr {
+    td {
+      background: #ffffff;
+      border: solid 1px #dddddd;
+      border-radius: 8px;
+      a {
+        color: #666666;
+        &:visited,
+        &:focus {
+          color: #666666 !important; //necessary to override           
+        }
+      }
+    }
+  }
+
+  &:hover {
+    tr {
+      td {
+        background: #f5f5f5 !important; //necessary to override
+        border: solid 1px #aaaaaa;
+        a {
+          color: #444444 !important; //necessary to override
+        }
+      }
+    }
+  }
+
+  &.round {
+    
+  }
+}
+
 table.button {
   &.sb-button {
-    &.neutral {
-      @include sb-button(#aaaaaa);    
-    }
+    @extend %button;
+    // &.neutral {
+    //   @include sb-button(#aaaaaa);    
+    // }
     &.ask {
       @include sb-button($ask);    
     }
