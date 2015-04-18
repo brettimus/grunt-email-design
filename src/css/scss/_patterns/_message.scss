@@ -1,30 +1,30 @@
-.sb-small {
-  color: #999999;
-  font-size: 14px;
-}
-
 td.sb-message {
   @extend .sb-panel;
+
   padding: 20px 0;
+
   p {
     // margin: 0;
     margin: 0 10px;
     &.date {
       color: #666666;
-      font-size: 14px;
+      font-size: $normal;
       margin-bottom: 8px;
       margin-top: 15px;
       .on {
-        @extend .sb-small;
+        color: #999999;
+        font-size: $normal;
       }
     }
+
     &.name {
-      @extend .sb-small;
+      color: #999999;
+      font-size: $small;
       margin-bottom: 16px;
       padding-bottom: 12px;
       a {
         color: #666666 !important;
-        font-size: 32px;
+        font-size: $head-lg;
         font-weight: 700;
 
         &:hover,
@@ -41,15 +41,16 @@ td.sb-message {
 
     &.subject {
       color: #666666;
-      font-size: 24px;
+      font-size: $head;
       font-weight: 700;
+      line-height: $head * 1.2;
       margin-bottom: 20px;
       text-align: center;
     }
 
     &.body {
-      font-size: 16px;
-      line-height: 24px;
+      font-size: $body;
+      line-height: $body*1.4;
       margin-bottom: 24px;
     }
   }
@@ -60,25 +61,27 @@ td.sb-message {
       &.lede {
         border-bottom: solid 1px #cccccc;
         color: #aaaaaa;
-        font-size: 16px;
+        font-size: $head-sm;
         padding-bottom: 4px;
       }
       &.date {
         color: #888888;
-        font-size: 14px;
+        font-size: $small;
         margin-bottom: 0;
         margin-top: 15px;
         .on {
-          @extend .sb-small;
+          color: #999999;
+          font-size: $small;
         }
       }
       &.name {
-        @extend .sb-small;
+        color: #999999;
+        font-size: $small;
         margin-bottom: 0;
         padding-bottom: 4px;
         a {
           color: #888888 !important;
-          font-size: 22px;
+          font-size: $head;
           font-weight: 400;
 
           &:hover,
@@ -92,15 +95,15 @@ td.sb-message {
       }
       &.subject {
         color: #888888;
-        font-size: 20px;
+        font-size: $head-sm;
         font-weight: 700;
         margin-bottom: 16px;
         text-align: center;
       }
       &.body {
         color: #666666;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: $normal;
+        line-height: $normal*1.4;
         margin-bottom: 12px;
       }
     }

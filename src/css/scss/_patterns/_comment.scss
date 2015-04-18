@@ -4,7 +4,7 @@
 }
 
 td.sb-comment {
-  @extend .sb-panel;
+  @extend %panel;
   padding: 20px 0;
   h2 {
     margin: 0 10px;

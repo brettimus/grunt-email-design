@@ -2,16 +2,24 @@
 td.sb-post {
   @extend .sb-panel;
 
+  h1.title {
+    font-size: $head-lg;
+  }
+
   h2.title {
-    font-size: 24px;
+    font-size: $head;
+    line-height: 1.25*$head;
   }
   .body {
     color: #888;
+    font-size: $body;
+    line-height: 1.25*$body;
+
     @include highlight-category;
   }
   .footer {
     color: #888;
-    font-size: 12px;
+    font-size: $body-sm;
     font-style: italic;
     margin-bottom: 16px;
     margin-top: 8px;
@@ -24,7 +32,12 @@ td.sb-post {
       margin-bottom: 20px;
       margin-top: 25px;
     }
+    .body {
+      font-size: $body-lg;
+      line-height: $body-lg * 1.25;
+    }
     .footer {
+      font-size: $body;
       margin-bottom: 25px;
     }
   }
@@ -34,8 +47,8 @@ td.sb-post-list {
   @extend .sb-panel;
 
   h3.title {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: $head-sm;
+    font-weight: 400;
     @include highlight-category;
 
     a {

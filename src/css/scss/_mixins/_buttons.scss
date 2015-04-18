@@ -11,6 +11,10 @@
     td {
       border: solid 1px $base-lighter;
     }
+    a {
+      display: block;
+      width: 100%;
+    }
   }
 
   &:hover {

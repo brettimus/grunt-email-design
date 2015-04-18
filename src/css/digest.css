@@ -937,6 +937,10 @@ table.round.button.sb-button {
 table.button.sb-button.ask tr td {
   border: solid 1px #f6978c;
 }
+table.button.sb-button.ask tr a {
+  display: block;
+  width: 100%;
+}
 table.button.sb-button.ask:hover tr td {
   background: #f8dcd9 !important;
   border: solid 1px #a91d0d;
@@ -959,6 +963,10 @@ table.button.sb-button.ask.filled:hover tr td a {
 }
 table.button.sb-button.offer tr td {
   border: solid 1px #a3cddb;
+}
+table.button.sb-button.offer tr a {
+  display: block;
+  width: 100%;
 }
 table.button.sb-button.offer:hover tr td {
   background: #e0ecf0 !important;
@@ -999,57 +1007,74 @@ table.button.sb-button.offer.filled:hover tr td a {
 
 .sb-footer-text p {
   color: #888888;
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
 }
 .sb-footer-text p a {
-  font-size: 11px;
-}
-.sb-footer-text p b {
-  font-weight: 600;
+  font-size: 14px;
 }
 
-.sb-panel, td.sb-post, td.sb-post-list {
+.sb-panel,
+td.sb-post,
+td.sb-post-list {
   background: #ffffff;
   border-bottom: solid 1px #dddddd;
   border-left: solid 1px #dddddd;
   border-right: solid 1px #dddddd;
   border-top: solid 2px #dddddd;
 }
-.sb-panel .title, td.sb-post .title, td.sb-post-list .title,
+.sb-panel .title,
+td.sb-post .title,
+td.sb-post-list .title,
 .sb-panel .lede,
 td.sb-post .lede,
 td.sb-post-list .lede {
   margin-bottom: 15px;
   margin-top: 20px;
 }
-.sb-panel h2.lede, td.sb-post h2.lede, td.sb-post-list h2.lede {
+.sb-panel h2.lede,
+td.sb-post h2.lede,
+td.sb-post-list h2.lede {
   border-bottom: solid 2px #cccccc;
   color: #999999;
-  font-size: 22px;
+  font-size: 28px;
   padding-bottom: 7px;
 }
-.sb-panel h2.lede.smaller, td.sb-post h2.lede.smaller, td.sb-post-list h2.lede.smaller {
-  font-size: 16px;
+.sb-panel h2.lede.smaller,
+td.sb-post h2.lede.smaller,
+td.sb-post-list h2.lede.smaller {
+  font-size: 18px;
 }
-.sb-panel.thick, td.thick.sb-post, td.thick.sb-post-list {
+.sb-panel.thick,
+td.thick.sb-post,
+td.thick.sb-post-list {
   border-bottom: solid 2px #dddddd;
   border-left: solid 2px #dddddd;
   border-right: solid 2px #dddddd;
   border-top: solid 4px #dddddd;
 }
-.sb-panel.ask, td.ask.sb-post, td.ask.sb-post-list {
+.sb-panel.ask,
+td.ask.sb-post,
+td.ask.sb-post-list {
   border-color: #ef412d;
 }
-.sb-panel.offer, td.offer.sb-post, td.offer.sb-post-list {
+.sb-panel.offer,
+td.offer.sb-post,
+td.offer.sb-post-list {
   border-color: #5aa5be;
 }
 
+td.sb-post h1.title {
+  font-size: 49px;
+}
 td.sb-post h2.title {
-  font-size: 24px;
+  font-size: 35px;
+  line-height: 43.75px;
 }
 td.sb-post .body {
   color: #888;
+  font-size: 21px;
+  line-height: 26.25px;
 }
 td.sb-post .body.ask {
   border-left: solid 3px #ef412d;
@@ -1059,7 +1084,7 @@ td.sb-post .body.offer {
 }
 td.sb-post .footer {
   color: #888;
-  font-size: 12px;
+  font-size: 17.5px;
   font-style: italic;
   margin-bottom: 16px;
   margin-top: 8px;
@@ -1069,13 +1094,18 @@ td.sb-post.sb-post-main .title {
   margin-bottom: 20px;
   margin-top: 25px;
 }
+td.sb-post.sb-post-main .body {
+  font-size: 24.5px;
+  line-height: 30.625px;
+}
 td.sb-post.sb-post-main .footer {
+  font-size: 21px;
   margin-bottom: 25px;
 }
 
 td.sb-post-list h3.title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 400;
 }
 td.sb-post-list h3.title.ask {
   border-left: solid 3px #ef412d;
@@ -1094,7 +1124,7 @@ td.sb-post-list h3.title a:hover, td.sb-post-list h3.title a:focus, td.sb-post-l
 .container.sb-preview-text td,
 .row.sb-preview-text td {
   color: #cccccc;
-  font-size: 11px;
+  font-size: 14px;
   padding-bottom: 0;
   padding-top: 20px;
 }

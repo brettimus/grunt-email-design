@@ -937,6 +937,10 @@ table.round.button.sb-button {
 table.button.sb-button.ask tr td {
   border: solid 1px #f6978c;
 }
+table.button.sb-button.ask tr a {
+  display: block;
+  width: 100%;
+}
 table.button.sb-button.ask:hover tr td {
   background: #f8dcd9 !important;
   border: solid 1px #a91d0d;
@@ -960,6 +964,10 @@ table.button.sb-button.ask.filled:hover tr td a {
 table.button.sb-button.offer tr td {
   border: solid 1px #a3cddb;
 }
+table.button.sb-button.offer tr a {
+  display: block;
+  width: 100%;
+}
 table.button.sb-button.offer:hover tr td {
   background: #e0ecf0 !important;
   border: solid 1px #326c80;
@@ -981,7 +989,7 @@ table.button.sb-button.offer.filled:hover tr td a {
   color: #ffffff !important;
 }
 
-.sb-small, td.sb-comment p.date .on, td.sb-comment p.name, td.sb-comment.history p.date .on, td.sb-comment.history p.name, td.sb-message p.date .on, td.sb-message p.name, td.sb-message.history p.date .on, td.sb-message.history p.name {
+.sb-small, td.sb-comment p.date .on, td.sb-comment p.name, td.sb-comment.history p.date .on, td.sb-comment.history p.name {
   color: #999999;
   font-size: 14px;
 }
@@ -1131,18 +1139,10 @@ td.sb-comment.history p.ellipsis {
 
 .sb-footer-text p {
   color: #888888;
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
 }
 .sb-footer-text p a {
-  font-size: 11px;
-}
-.sb-footer-text p b {
-  font-weight: 600;
-}
-
-.sb-small, td.sb-comment p.date .on, td.sb-comment p.name, td.sb-comment.history p.date .on, td.sb-comment.history p.name, td.sb-message p.date .on, td.sb-message p.name, td.sb-message.history p.date .on, td.sb-message.history p.name {
-  color: #999999;
   font-size: 14px;
 }
 
@@ -1154,17 +1154,23 @@ td.sb-message p {
 }
 td.sb-message p.date {
   color: #666666;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 8px;
   margin-top: 15px;
 }
+td.sb-message p.date .on {
+  color: #999999;
+  font-size: 18px;
+}
 td.sb-message p.name {
+  color: #999999;
+  font-size: 14px;
   margin-bottom: 16px;
   padding-bottom: 12px;
 }
 td.sb-message p.name a {
   color: #666666 !important;
-  font-size: 32px;
+  font-size: 49px;
   font-weight: 700;
 }
 td.sb-message p.name a:hover, td.sb-message p.name a:focus, td.sb-message p.name a:active, td.sb-message p.name a:visited {
@@ -1175,14 +1181,15 @@ td.sb-message p.name a:hover {
 }
 td.sb-message p.subject {
   color: #666666;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: 700;
+  line-height: 42px;
   margin-bottom: 20px;
   text-align: center;
 }
 td.sb-message p.body {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 29.4px;
   margin-bottom: 24px;
 }
 td.sb-message.history {
@@ -1191,7 +1198,7 @@ td.sb-message.history {
 td.sb-message.history p.lede {
   border-bottom: solid 1px #cccccc;
   color: #aaaaaa;
-  font-size: 16px;
+  font-size: 28px;
   padding-bottom: 4px;
 }
 td.sb-message.history p.date {
@@ -1200,13 +1207,19 @@ td.sb-message.history p.date {
   margin-bottom: 0;
   margin-top: 15px;
 }
+td.sb-message.history p.date .on {
+  color: #999999;
+  font-size: 14px;
+}
 td.sb-message.history p.name {
+  color: #999999;
+  font-size: 14px;
   margin-bottom: 0;
   padding-bottom: 4px;
 }
 td.sb-message.history p.name a {
   color: #888888 !important;
-  font-size: 22px;
+  font-size: 35px;
   font-weight: 400;
 }
 td.sb-message.history p.name a:hover, td.sb-message.history p.name a:focus, td.sb-message.history p.name a:active, td.sb-message.history p.name a:visited {
@@ -1215,58 +1228,72 @@ td.sb-message.history p.name a:hover, td.sb-message.history p.name a:focus, td.s
 }
 td.sb-message.history p.subject {
   color: #888888;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 16px;
   text-align: center;
 }
 td.sb-message.history p.body {
   color: #666666;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 25.2px;
   margin-bottom: 12px;
 }
 
-.sb-panel, td.sb-comment, td.sb-message {
+td.sb-comment,
+.sb-panel,
+td.sb-message {
   background: #ffffff;
   border-bottom: solid 1px #dddddd;
   border-left: solid 1px #dddddd;
   border-right: solid 1px #dddddd;
   border-top: solid 2px #dddddd;
 }
-.sb-panel .title, td.sb-comment .title, td.sb-message .title,
-.sb-panel .lede,
+td.sb-comment .title,
 td.sb-comment .lede,
+.sb-panel .title,
+td.sb-message .title,
+.sb-panel .lede,
 td.sb-message .lede {
   margin-bottom: 15px;
   margin-top: 20px;
 }
-.sb-panel h2.lede, td.sb-comment h2.lede, td.sb-message h2.lede {
+td.sb-comment h2.lede,
+.sb-panel h2.lede,
+td.sb-message h2.lede {
   border-bottom: solid 2px #cccccc;
   color: #999999;
-  font-size: 22px;
+  font-size: 28px;
   padding-bottom: 7px;
 }
-.sb-panel h2.lede.smaller, td.sb-comment h2.lede.smaller, td.sb-message h2.lede.smaller {
-  font-size: 16px;
+td.sb-comment h2.lede.smaller,
+.sb-panel h2.lede.smaller,
+td.sb-message h2.lede.smaller {
+  font-size: 18px;
 }
-.sb-panel.thick, td.thick.sb-comment, td.thick.sb-message {
+td.thick.sb-comment,
+.sb-panel.thick,
+td.thick.sb-message {
   border-bottom: solid 2px #dddddd;
   border-left: solid 2px #dddddd;
   border-right: solid 2px #dddddd;
   border-top: solid 4px #dddddd;
 }
-.sb-panel.ask, td.ask.sb-comment, td.ask.sb-message {
+td.ask.sb-comment,
+.sb-panel.ask,
+td.ask.sb-message {
   border-color: #ef412d;
 }
-.sb-panel.offer, td.offer.sb-comment, td.offer.sb-message {
+td.offer.sb-comment,
+.sb-panel.offer,
+td.offer.sb-message {
   border-color: #5aa5be;
 }
 
 .container.sb-preview-text td,
 .row.sb-preview-text td {
   color: #cccccc;
-  font-size: 11px;
+  font-size: 14px;
   padding-bottom: 0;
   padding-top: 20px;
 }

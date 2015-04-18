@@ -1,2 +1,16 @@
 $ask         : #ef412d;
 $offer       : #5aa5be;
+
+// typography
+$base-size: 10px;
+
+$small : $base-size * 1.4;
+$normal: $base-size * 1.8; 
+
+// post
+$head-lg : $small * 3.5;
+$head    : $small * 2.5;
+$head-sm : $small * 2;
+$body-lg : $small * 1.75;
+$body    : $small * 1.5;
+$body-sm : $small * 1.25;
