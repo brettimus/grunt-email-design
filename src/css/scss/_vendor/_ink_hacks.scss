@@ -1,0 +1,27 @@
+center {
+  min-width: 0;
+}
+
+table.container {
+  width: 100%;
+}
+
+td.wrapper {
+  padding: 10px 10px 0px 10px;
+  position: relative;
+}
+
+table.twelve {
+  width: 100%;
+}
+
+table.twelve center {
+  min-width: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  td.wrapper {
+    height: auto !important;
+    width: 600px !important;
+  } 
+}

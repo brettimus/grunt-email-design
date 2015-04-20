@@ -7,22 +7,26 @@
     <title>{{ subject }}</title>
 
     <link rel="stylesheet" href="../src/css/notification.css">
+
+    <style>
+      
+    </style>
   </head>
   {{!-- Weird body attributes are an iOS fix --}}
   <body class="sb-body" width:100%; min-width:100%;>
     {{!-- Outlook > 2007 --}}
     <!--[if mso>
-    <table width="640" border="0" cellspacing="0" cellpadding="0" style="background:#f4f4f4;">
+    <table width="600" border="0" cellspacing="0" cellpadding="0" style="background:#f4f4f4;">
       <tr>
        <td>
     <![endif]-->
     {{!-- Outlook <= 2007 --}}
     <!--[if (IE)]>
-      <table width="640" border="0" cellspacing="0" cellpadding="0" style="background:#f4f4f4;">
+      <table width="600" border="0" cellspacing="0" cellpadding="0" style="background:#f4f4f4;">
         <tr>
          <td>
     <![endif]-->
-    <table class="body sb-body" width="90%" style="max-width: 600px;">
+    <table class="body sb-body" width="100%" style="max-width: 600px; margin: 0 auto !important;">
       <tr>
         <td class="center" align="center" valign="top">
           <center>

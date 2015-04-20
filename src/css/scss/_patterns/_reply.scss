@@ -1,13 +1,10 @@
-.container,
-.row {
-  &.sb-reply-text {
-    td {
-      color: #666666;
-      font-size: 14px;
-      font-weight: 700;
-      padding-bottom: 0;
-      padding-top: 20px;
-      text-align: center;
-    }
+.sb-reply-text {
+  center {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 0;
+    padding-top: 20px;
+    text-align: center;
   }
 }

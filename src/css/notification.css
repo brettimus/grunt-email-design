@@ -904,6 +904,33 @@ body.outlook p {
     display: inherit !important;
   }
 }
+center {
+  min-width: 0;
+}
+
+table.container {
+  width: 100%;
+}
+
+td.wrapper {
+  padding: 10px 10px 0px 10px;
+  position: relative;
+}
+
+table.twelve {
+  width: 100%;
+}
+
+table.twelve center {
+  min-width: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  td.wrapper {
+    height: auto !important;
+    width: 600px !important;
+  }
+}
 .sb-body {
   background: #f4f4f4;
 }
@@ -1298,8 +1325,7 @@ td.offer.sb-message {
   padding-top: 20px;
 }
 
-.container.sb-reply-text td,
-.row.sb-reply-text td {
+.sb-reply-text center {
   color: #666666;
   font-size: 14px;
   font-weight: 700;
