@@ -989,28 +989,28 @@ table.button.sb-button.offer.filled:hover tr td a {
   color: #ffffff !important;
 }
 
-.sb-cta {
-  margin-top: 20px;
+.sb-cta .sb-cta-text {
+  padding: 25px 0 20px 0;
   text-align: center !important;
 }
-.sb-cta a {
+.sb-cta .sb-cta-text a {
   color: #666666 !important;
   font-size: 20px;
   font-weight: 700;
 }
-.sb-cta a:hover {
+.sb-cta .sb-cta-text a:hover {
   text-decoration: underline;
 }
-.sb-cta a.low-contrast {
+.sb-cta .sb-cta-text a.low-contrast {
   color: #999999 !important;
 }
 
-.sb-footer-text p {
+.sb-footer td.sb-footer-text {
   color: #888888;
   font-size: 14px;
   text-align: center;
 }
-.sb-footer-text p a {
+.sb-footer a {
   font-size: 14px;
 }
 

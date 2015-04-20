@@ -246,7 +246,7 @@ color: #888888 !important; text-decoration: none !important;
 td.sb-comment.history p.name a:visited {
 color: #888888 !important; text-decoration: none !important;
 }
-.sb-cta a:hover {
+.sb-cta .sb-cta-text a:hover {
 text-decoration: underline;
 }
 td.sb-message p.name a:hover {
@@ -462,12 +462,14 @@ color: #888888 !important; text-decoration: none !important;
 <table class="container" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 100%">
 <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
 <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-  <table class="row sb-reply-text" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
-  <center style="color: #666666; font-size: 14px; font-weight: 700; min-width: 0; padding-bottom: 0; padding-top: 20px; text-align: center; width: 100%">
-   <hr style="background: #d9d9d9; border: none; color: #d9d9d9; height: 1px" />
-     — To reply by email, write above this line —
-   <hr style="background: #d9d9d9; border: none; color: #d9d9d9; height: 1px" />
-  </center>
+  <table class="sb-reply" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
+  <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+    <td class="sb-reply-text wrapper" align="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #666666; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: 700; hyphens: auto; line-height: 19px; margin: 0; padding: 20px 10px 0; position: relative; text-align: center; vertical-align: top; word-break: break-word" valign="top">
+      <hr style="background: #d9d9d9; border: none; color: #d9d9d9; height: 1px" />
+        — To reply by email, write above this line —
+      <hr style="background: #d9d9d9; border: none; color: #d9d9d9; height: 1px" />
+    </td>
+  </tr>
 </table>
   <table class="row" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
   <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
@@ -501,48 +503,25 @@ color: #888888 !important; text-decoration: none !important;
     </td>
   </tr>
 </table>
-  <table class="row" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+  <table class="sb-cta" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
   <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-    <td class="wrapper" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 10px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-      <table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 100%">
-        <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-          <td class="u-pad-none u-text-center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
-            <p class="sb-cta" style="color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 20px 0 10px; padding: 0; text-align: center !important" align="center">
-              <a href="#" style="color: #666666 !important; font-size: 20px; font-weight: 700; text-decoration: none">Go to the Post »</a>                            
-            </p>
-          </td>
-          <td class="expander" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top"></td>
-        </tr>
-      </table>
+    <td class="sb-cta-text" align="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 25px 0 20px; text-align: center !important; vertical-align: top; word-break: break-word" valign="top">
+      <a href="#" style="color: #666666 !important; font-size: 20px; font-weight: 700; text-decoration: none">Go To The Post »</a>
     </td>
   </tr>
 </table>
-  <table class="row sb-footer-text" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+  <table class="sb-footer" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
   <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-    <td class="wrapper last" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 0px 0px 10px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-      <table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 100%">
-        <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-          <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
-            <hr style="background: #d9d9d9; border: none; color: #d9d9d9; height: 1px" />
-            <p class="text-pad" style="color: #888888; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0 10px; text-align: center" align="center">
-              Copyright © 2015
-              <a href="http://switchboardhq.com/weathergram/" style="color: #2ba6cb; font-size: 14px; text-decoration: none">Weathergram, Inc.</a>
-              <br />
-              |
-              <a href="mailto:support@switchboardhq.com" style="color: #2ba6cb; font-size: 14px; text-decoration: none">Support</a>
-              |
-              <a href="http://twitter.com/switchboardhq" style="color: #2ba6cb; font-size: 14px; text-decoration: none">Twitter</a>
-              |
-              <br />
-              <a href="#" style="color: #2ba6cb; font-size: 14px; text-decoration: none">Unsubscribe</a>
-            </p>
-          </td>
-        </tr>
-      </table>
+    <td class="wrapper sb-footer-text" align="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #888888; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 10px 0px; position: relative; text-align: center; vertical-align: top; word-break: break-word" valign="top">
+      <hr style="background: #d9d9d9; border: none; color: #d9d9d9; height: 1px" />
+      Copyright © 2015 <a href="http://switchboardhq.com/weathergram/" style="color: #2ba6cb; font-size: 14px; text-decoration: none">Weathergram, Inc.</a>
+      <br />
+      | <a href="mailto:support@switchboardhq.com" style="color: #2ba6cb; font-size: 14px; text-decoration: none">Support</a> | <a href="http://twitter.com/switchboardhq" style="color: #2ba6cb; font-size: 14px; text-decoration: none">Twitter</a> |
+      <br />
+      <a href="#" style="color: #2ba6cb; font-size: 14px; text-decoration: none">Unsubscribe</a>
     </td>
   </tr>
 </table>
-
 </td>
 </tr>
 </table>
@@ -552,6 +531,5 @@ color: #888888 !important; text-decoration: none !important;
     </table>
     
     
-
   </body>
 </html>

@@ -1,15 +1,17 @@
 .sb-cta {
-  margin-top: 20px;
-  text-align: center !important;
-  a {
-    color: #666666 !important;
-    font-size: 20px;
-    font-weight: 700;
-    &:hover {
-      text-decoration: underline;
-    }
-    &.low-contrast {
-      color: #999999 !important;
+  .sb-cta-text {
+    padding: 25px 0 20px 0;
+    text-align: center !important;
+    a {
+      color: #666666 !important;
+      font-size: 20px;
+      font-weight: 700;
+      &:hover {
+        text-decoration: underline;
+      }
+      &.low-contrast {
+        color: #999999 !important;
+      }
     }
   }
 }

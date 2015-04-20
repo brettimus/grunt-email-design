@@ -1,10 +1,12 @@
-.sb-footer-text {
-  p {
-    color: #888888;
-    font-size: $small;
-    text-align: center;
-    a {
+.sb-footer {
+  td {
+    &.sb-footer-text {
+      color: #888888;
       font-size: $small;
+      text-align: center;      
     }
-  }  
+  }
+  a {
+    font-size: $small;
+  }
 }

@@ -1,7 +1,7 @@
-.sb-reply-text {
-  center {
+.sb-reply {
+  td.sb-reply-text {
     color: #666666;
-    font-size: 14px;
+    font-size: $small;
     font-weight: 700;
     padding-bottom: 0;
     padding-top: 20px;
