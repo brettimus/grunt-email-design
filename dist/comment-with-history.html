@@ -219,32 +219,56 @@ background: #326c80 !important;
 table.button.sb-button.offer.filled:hover tr td a {
 color: #ffffff !important;
 }
-td.sb-comment p.name a:hover {
+td.sb-comment td.name a:hover {
 color: #444444;
 }
-td.sb-comment p.name a:focus {
+td.sb-comment td.name a:focus {
 color: #444444;
 }
-td.sb-comment p.name a:active {
+td.sb-comment td.name a:active {
 color: #444444;
 }
-td.sb-comment p.name a:visited {
+td.sb-comment td.name a:visited {
 color: #444444;
 }
-td.sb-comment p.name a:hover {
+td.sb-comment td.name a:hover {
 text-decoration: underline !important;
 }
-td.sb-comment.history p.name a:hover {
-color: #888888 !important; text-decoration: none !important;
+td.sb-comment.sb-comment-history td.name a:hover {
+color: #999999 !important; text-decoration: none !important;
 }
-td.sb-comment.history p.name a:focus {
-color: #888888 !important; text-decoration: none !important;
+td.sb-comment.sb-comment-history td.name a:focus {
+color: #999999 !important; text-decoration: none !important;
 }
-td.sb-comment.history p.name a:active {
-color: #888888 !important; text-decoration: none !important;
+td.sb-comment.sb-comment-history td.name a:active {
+color: #999999 !important; text-decoration: none !important;
 }
-td.sb-comment.history p.name a:visited {
-color: #888888 !important; text-decoration: none !important;
+td.sb-comment.sb-comment-history td.name a:visited {
+color: #999999 !important; text-decoration: none !important;
+}
+td.sb-comment.sb-comment-history .history.second td.name a:hover {
+color: #a6a6a6 !important;
+}
+td.sb-comment.sb-comment-history .history.second td.name a:focus {
+color: #a6a6a6 !important;
+}
+td.sb-comment.sb-comment-history .history.second td.name a:active {
+color: #a6a6a6 !important;
+}
+td.sb-comment.sb-comment-history .history.second td.name a:visited {
+color: #a6a6a6 !important;
+}
+td.sb-comment.sb-comment-history .history.third td.name a:hover {
+color: #bfbfbf !important;
+}
+td.sb-comment.sb-comment-history .history.third td.name a:focus {
+color: #bfbfbf !important;
+}
+td.sb-comment.sb-comment-history .history.third td.name a:active {
+color: #bfbfbf !important;
+}
+td.sb-comment.sb-comment-history .history.third td.name a:visited {
+color: #bfbfbf !important;
 }
 .sb-cta .sb-cta-text a:hover {
 text-decoration: underline;
@@ -477,22 +501,34 @@ color: #888888 !important; text-decoration: none !important;
       <table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 100%">
         <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
           <td class="sb-comment thick text-pad" style="-moz-hyphens: auto; -webkit-hyphens: auto; background: #ffffff; border-collapse: collapse !important; border-color: #dddddd; border-style: solid; border-width: 4px 2px 2px; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#ffffff" valign="top">
-            <h2 class="lede" style="border-bottom-color: #cccccc; border-bottom-style: solid; border-bottom-width: 0 !important; color: #666666 !important; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 28px; font-weight: normal; line-height: 1.3; margin: 18px 10px 0; padding: 0 0 7px; text-align: left; word-break: normal" align="left">
-              <span style="color: #999999; display: block; font-size: 16px">
-                On your post               
-              </span>
-              Looking for Thing in Place for Stuff
-            </h2>
-            <p class="name" style="color: #999999; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 10px; padding: 0 0 4px; text-align: left" align="left">
-              <a href="" style="color: #666666 !important; font-size: 32px; font-weight: 700; line-height: 42px; text-decoration: none">James</a> said
-            </p>
-            <p class="body" style="color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0 10px 32px; padding: 0; text-align: left" align="left">
-              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reiciendis veritatis enim incidunt ab eaque dolorem? Tenetur odio est magnam repellendus. Dignissimos odit doloribus, possimus voluptatibus vel sit aperiam nulla!”
-            </p>
-            <table class="button sb-button offer" style="border-collapse: collapse; border-spacing: 0; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%">
+            <table class="header" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%">
               <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; background: #ffffff; border-collapse: collapse !important; border-radius: 8px; border: 1px solid #a3cddb; color: #ffffff; display: block; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 8px 0; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#ffffff" valign="top">
-                  <a href="#" style="color: #666666; display: block; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; width: 100%">Reply to James »</a>
+                <td class="lede" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #999999; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 18px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 20px 0 15px; padding: 20px 10px 0; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">On your <span class="u-text-ask" style="color: #ef412d">ask</span></td>
+              </tr>
+              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                <td class="post-title" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                  <h2 style="border-bottom-color: #dddddd; border-bottom-style: solid; border-bottom-width: 1px; color: #666666 !important; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 24.5px; font-weight: normal; line-height: 1.3; margin: 4px 0 21px; padding: 0 0 8px; text-align: center; word-break: normal" align="center">
+                    Looking for Thing in Place with Stuff                    
+                  </h2>
+                </td>
+              </tr>
+            </table>
+            <table style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
+              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                <td class="name" valign="bottom" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #999999; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 10px 0; text-align: left; vertical-align: bottom; word-break: break-word" align="left">
+                  <a href="" style="color: #666666 !important; font-size: 49px; font-weight: 700; text-decoration: none">James</a> said
+                </td>
+              </tr>
+              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                <td class="body" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 21px; font-weight: normal; hyphens: auto; line-height: 28.35px; margin: 0; padding: 10px 10px 40px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                  “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reiciendis veritatis enim incidunt ab eaque dolorem? Tenetur odio est magnam repellendus. Dignissimos odit doloribus, possimus voluptatibus vel sit aperiam nulla!”
+                </td>
+              </tr>
+            </table>
+            <table class="button large-button sb-button offer" style="border-collapse: collapse; border-spacing: 0; overflow: hidden; padding: 0; text-align: left; vertical-align: top; width: 100%">
+              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; background: #ffffff; border-collapse: collapse !important; border-radius: 8px; border: 1px solid #a3cddb; color: #ffffff; display: block; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 21px 10px 18px; text-align: center; vertical-align: top; width: auto !important; word-break: break-word" align="center" bgcolor="#ffffff" valign="top">
+                  <a href="#" style="color: #666666; display: block; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 24px; font-weight: bold; text-decoration: none; width: 100%">Reply to James »</a>
                 </td>
               </tr>
             </table>
@@ -508,33 +544,60 @@ color: #888888 !important; text-decoration: none !important;
       <td class="wrapper" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 10px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
         <table class="twelve columns" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 100%">
           <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-            <td class="sb-comment history text-pad" style="-moz-hyphens: auto; -webkit-hyphens: auto; background: #f5f5f5; border-collapse: collapse !important; border-color: #dddddd; border-style: solid; border-width: 2px 1px 1px; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#f5f5f5" valign="top">
-              <p class="lede" style="border-bottom-color: #cccccc; border-bottom-style: solid; border-bottom-width: 0; color: #aaaaaa; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 16px; font-weight: normal; line-height: 20px; margin: 0 10px; padding: 8px 0 4px; text-align: left" align="left">
-                Recent comments
-              </p>
-              <p class="name" style="color: #999999; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 12px 10px 0; padding: 8px 0 0; text-align: left" align="left">
-                <a href="" style="color: #888888 !important; font-size: 22px; font-weight: 400; line-height: 27px; text-decoration: none">You</a> said
-              </p>
-              <p class="body" style="color: #666666; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 10px; padding: 0 0 6px; text-align: left" align="left">
-                “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reiciendis veritatis enim incidunt ab eaque dolorem? Tenetur odio est magnam repellendus. Dignissimos odit doloribus, possimus voluptatibus vel sit aperiam nulla!”
-              </p>
-
-              <p class="name second" style="color: #aaaaaa !important; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 12px 10px 0; padding: 8px 0 0; text-align: left" align="left">
-                <a href="" style="color: #999999 !important; font-size: 22px; font-weight: 400; line-height: 27px; text-decoration: none">Someone Else</a> said
-              </p>
-              <p class="body second" style="color: #888888; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 10px; padding: 0 0 6px; text-align: left" align="left">
-                “Lorem ipsum. Dignissimos odit doloribus, possimus voluptatibus!”
-              </p>
-
-              <p class="name third" style="color: #cccccc !important; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 12px 10px 0; padding: 8px 0 0; text-align: left" align="left">
-                <a href="" style="color: #bbbbbb !important; font-size: 22px; font-weight: 400; line-height: 27px; text-decoration: none">Another</a> said
-              </p>
-              <p class="body third" style="color: #aaaaaa; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 10px; padding: 0 0 6px; text-align: left" align="left">
-                “Lorem ipsum dolor sit amet dignissimos odit doloribus. Possimus voluptatibus vel sit aperiam nulla!”
-              </p>
-              <p class="ellipsis" style="color: #aaaaaa; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 22px; font-weight: normal; line-height: 19px; margin: 0 10px; padding: 12px 0 16px; text-align: center" align="center">
-                …
-              </p>
+            <td class="sb-comment sb-comment-history text-pad" style="-moz-hyphens: auto; -webkit-hyphens: auto; background: #f5f5f5; border-collapse: collapse !important; border-color: #dddddd; border-style: solid; border-width: 2px 1px 1px; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 10px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" bgcolor="#f5f5f5" valign="top">
+              <table class="header" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%">
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="lede" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #b3b3b3; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 17.5px; font-weight: normal; hyphens: auto; line-height: 21.875px; margin: 20px 0 15px; padding: 18px 10px 0; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">Others have also chimed in</td>
+                </tr>
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="post-title" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                    <h3 style="border-bottom-color: #dddddd; border-bottom-style: solid; border-bottom-width: 1px; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 32px; font-weight: normal; line-height: 1.3; margin: 0 0 8px; padding: 0 0 8px; text-align: left; word-break: normal" align="left"></h3>
+                  </td>
+                </tr>
+              </table>
+              <table class="history first" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="name" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #999999; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 24.5px; margin: 0; padding: 16px 10px 0; text-align: left; vertical-align: bottom; word-break: break-word" align="left" valign="bottom">
+                    <a href="#" style="color: #999999 !important; font-size: 24.5px; font-weight: 700; text-decoration: none">You</a> said
+                  </td>
+                </tr>
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="body" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #7b7b7b; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 17.5px; font-weight: normal; hyphens: auto; line-height: 21.875px; margin: 0; padding: 0 10px 12px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                    “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum reiciendis veritatis enim incidunt ab eaque dolorem? Tenetur odio est magnam repellendus. Dignissimos odit doloribus, possimus voluptatibus vel sit aperiam nulla!”
+                  </td>
+                </tr>
+              </table>
+              <table class="history second" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="name" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #b3b3b3; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 24.5px; margin: 0; padding: 16px 10px 0; text-align: left; vertical-align: bottom; word-break: break-word" align="left" valign="bottom">
+                    <a href="#" style="color: #a6a6a6 !important; font-size: 24.5px; font-weight: 700; text-decoration: none">Someone Else</a> said                    
+                  </td>
+                </tr>
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="body" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #959595; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 17.5px; font-weight: normal; hyphens: auto; line-height: 21.875px; margin: 0; padding: 0 10px 12px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                    “Lorem ipsum. Dignissimos odit doloribus, possimus voluptatibus!”
+                  </td>
+                </tr>
+              </table>
+              <table class="history third" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="name" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #cccccc; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 24.5px; margin: 0; padding: 16px 10px 0; text-align: left; vertical-align: bottom; word-break: break-word" align="left" valign="bottom">
+                    <a href="#" style="color: #bfbfbf !important; font-size: 24.5px; font-weight: 700; text-decoration: none">Another</a> said                    
+                  </td>
+                </tr>
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td class="body" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #a2a2a2; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 17.5px; font-weight: normal; hyphens: auto; line-height: 21.875px; margin: 0; padding: 0 10px 12px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                    “Lorem ipsum dolor sit amet dignissimos odit doloribus. Possimus voluptatibus vel sit aperiam nulla!”
+                  </td>
+                </tr>
+              </table>
+              <table class="ellipsis" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%">
+                <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                  <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #999999; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 21px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0 10px 20px; text-align: center; vertical-align: top; word-break: break-word" align="center" valign="top">
+                    …
+                  </td>
+                </tr>
+              </table>
             </td>
             <td class="expander" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top"></td>
           </tr>
@@ -542,11 +605,10 @@ color: #888888 !important; text-decoration: none !important;
       </td>
     </tr>
   </table>
-
   <table class="sb-cta" width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top">
   <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
-    <td class="sb-cta-text" align="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 25px 0 20px; text-align: center !important; vertical-align: top; word-break: break-word" valign="top">
-      <a href="#" style="color: #666666 !important; font-size: 20px; font-weight: 700; text-decoration: none">Go To The Post »</a>
+    <td class="sb-cta-text" align="center" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 30px 0 20px; text-align: center !important; vertical-align: top; word-break: break-word" valign="top">
+      <a href="#" style="color: #666666 !important; font-size: 24.5px; font-weight: 700; text-decoration: none">Go To The Post »</a>
     </td>
   </tr>
 </table>

@@ -1,0 +1,11 @@
+@mixin link-states($base) {
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: lighten($base, 30%);
+  }
+  &:hover {
+    text-decoration: underline !important;
+  }  
+}

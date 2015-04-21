@@ -1,16 +1,13 @@
 .sb-cta {
   .sb-cta-text {
-    padding: 25px 0 20px 0;
+    padding: 30px 0 20px 0;
     text-align: center !important;
     a {
       color: #666666 !important;
-      font-size: 20px;
+      font-size: $body-lg;
       font-weight: 700;
       &:hover {
         text-decoration: underline;
-      }
-      &.low-contrast {
-        color: #999999 !important;
       }
     }
   }

@@ -1,44 +1,42 @@
-.sb-small {
-  color: #999999;
-  font-size: 14px;
-}
-
 td.sb-comment {
   @extend %panel;
-  padding: 20px 0;
-  h2 {
-    margin: 0 10px;
-    span {
-      color: #999999;
-      display: block;
-      font-size: 16px;
-    }
+  padding: 20px 10px;
+
+  table.header {
+    width: 100%;
+  }  
+
+  td {
+    padding-left: 10px;
+    padding-right: 10px;
     &.lede {
-      border-bottom-width: 0 !important;
-      color: #666666 !important;
-      margin-bottom: 0;
-      margin-top: 18px;
+      color: #999999;
+      font-size: $normal;
+      padding-bottom: 0;
+      padding-top: 20px;
+      text-align: center;
     }
-  }
-  p {
-    margin: 0 10px;
-    &.date {
-      color: #666666;
-      font-size: 14px;
-      margin-bottom: 8px;
-      margin-top: 15px;
-      .on {
-        @extend .sb-small;
+    &.post-title {
+      h2 {
+        border-bottom: solid 1px #dddddd;
+        color: $black-light !important;
+        font-size: $body-lg;
+        margin-bottom: $body;
+        margin-top: 4px;
+        padding-bottom: 8px;
+        text-align: center;
       }
     }
+
     &.name {
-      @extend .sb-small;
-      padding-bottom: 4px;
+      color: #999999;
+      font-size: $small;
+      padding-bottom: 0;
+      vertical-align: bottom;
       a {
-        color: #666666 !important;
-        font-size: 32px;
+        color: $black-light !important;
+        font-size: $head-lg;
         font-weight: 700;
-        line-height: 42px;
 
         &:hover,
         &:focus,
@@ -53,101 +51,110 @@ td.sb-comment {
     }
 
     &.body {
-      font-size: 16px;
-      line-height: 24px;
-      margin-bottom: 32px;
+      font-size: $body;
+      line-height: $body*1.35;
+      padding-bottom: 40px;
+      padding-top: 10px;
     }
   }
 
-  &.history {
+  &.sb-comment-history {
     background: #f5f5f5;
-    p {
-      padding: 8px 0 12px 0;
-      &.lede {
-        border-bottom: solid 0 #cccccc;
-        color: #aaaaaa;
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-bottom: 4px;
-        span {
-          color: #bbbbbb;
-          display: block;
-          font-size: 11px;
-        }
-      }
-      &.date {
-        color: #888888;
-        font-size: 14px;
-        margin-bottom: 0;
-        margin-top: 15px;
-        .on {
-          @extend .sb-small;
-        }
-      }
-      // this is all sorts of fucked
-      &.name {
-        @extend .sb-small;
-        margin-top: 12px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        a {
-          color: #888888 !important;
-          font-size: 22px;
-          font-weight: 400;
-          line-height: 27px;
 
+    td {
+      padding-bottom: 0;
+      padding-top: 0;
+
+      &.lede {
+        color: lighten(#999999, 10%);
+        font-size: $body-sm;
+        line-height: $body-sm*1.25;
+        padding-top: 18px;
+      }
+      &.post-title {
+        h3 {
+          border-bottom: solid 1px #dddddd;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+        }
+      }
+
+      &.name {
+        color: #999999;
+        font-size: $small;
+        line-height: $body-lg;
+        padding-top: 16px;
+        a {
+          color: lighten($black-light, 20%) !important;
+          font-size: $body-lg;
+          font-weight: 700;
+          // mixin
           &:hover,
           &:focus,
           &:active,
           &:visited {
-            color: #888888 !important;
+            color: lighten($black-light, 20%) !important;
             text-decoration: none !important;
           }  
         }
-        &.second {
-          color: #aaaaaa !important;
-          a {
-            color: #999999 !important;
-          }
-        }
-
-        &.third {
-          color: #cccccc !important;
-          a {
-            color: #bbbbbb !important;
-          }           
-        }  
-      }
-
-      &.subject {
-        color: #888888;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 8px;
       }
       &.body {
-        // border-bottom: solid 0 #dddddd;
-        color: #666666;
-        font-size: 14px;
-        line-height: 19px;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: 6px;
-        &.second {
-          color: #888888;
-        }
-
-        &.third {
-          color: #aaaaaa;   
-        } 
+        color: lighten($black, 35%);
+        font-size: $body-sm;
+        line-height: $body-sm*1.25;
+        padding-bottom: 12px;
       }
-      &.ellipsis {
-        color: #aaaaaa;
-        font-size: 22px;
-        padding: 12px 0 16px;
+    }
+
+    .history {
+      &.second {
+        td {
+          &.name {
+            color: lighten($black-light, 30%);
+            a {
+              color: lighten($black-light, 25%) !important;
+              // mixin
+              &:hover,
+              &:focus,
+              &:active,
+              &:visited {
+                color: lighten($black-light, 25%) !important;
+              }  
+            }
+          }
+          &.body {
+            color: lighten($black, 45%);
+          }
+        }
+      }
+      &.third {
+        td {
+          &.name {
+            color: lighten($black-light, 40%);
+            a {
+              color: lighten($black-light, 35%) !important;
+              // mixin
+              &:hover,
+              &:focus,
+              &:active,
+              &:visited {
+                color: lighten($black-light, 35%) !important;
+              }  
+            }
+          }
+          &.body {
+            color: lighten($black, 50%);
+          }
+        }
+      }
+    }
+
+    .ellipsis {
+      width: 100%;
+      td {
+        color: #999999;
+        font-size: $body;
+        padding-bottom: 20px;
         text-align: center;
       }
     }
