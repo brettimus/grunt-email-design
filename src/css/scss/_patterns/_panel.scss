@@ -1,10 +1,10 @@
 %panel,
 .sb-panel {
-  background:    #ffffff;
-  border-bottom: solid 1px #dddddd;
-  border-left:   solid 1px #dddddd;
-  border-right:  solid 1px #dddddd;
-  border-top:    solid 2px #dddddd;
+  background:    $white;
+  border-bottom: solid 1px $gray-light;
+  border-left:   solid 1px $gray-light;
+  border-right:  solid 1px $gray-light;
+  border-top:    solid 2px $gray-light;
 
   .title,
   .lede {
@@ -24,10 +24,10 @@
   }
 
   &.thick {
-    border-bottom: solid 2px #dddddd;
-    border-left:   solid 2px #dddddd;
-    border-right:  solid 2px #dddddd;
-    border-top:    solid 4px #dddddd;
+    border-bottom: solid 2px $gray-light;
+    border-left:   solid 2px $gray-light;
+    border-right:  solid 2px $gray-light;
+    border-top:    solid 4px $gray-light;
   }
   &.ask {
     border-color: $ask;

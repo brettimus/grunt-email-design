@@ -9,3 +9,18 @@
     text-decoration: underline !important;
   }  
 }
+
+@mixin link-states-color($color) {
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: $color;
+  }
+}
+
+@mixin link-hover-underline {
+  &:hover {
+    text-decoration: underline !important;
+  }   
+}

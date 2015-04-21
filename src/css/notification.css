@@ -1111,7 +1111,7 @@ td.sb-comment.sb-comment-history .history.second td.name a {
   color: #a6a6a6 !important;
 }
 td.sb-comment.sb-comment-history .history.second td.name a:hover, td.sb-comment.sb-comment-history .history.second td.name a:focus, td.sb-comment.sb-comment-history .history.second td.name a:active, td.sb-comment.sb-comment-history .history.second td.name a:visited {
-  color: #a6a6a6 !important;
+  color: #a6a6a6;
 }
 td.sb-comment.sb-comment-history .history.second td.body {
   color: #959595;
@@ -1123,7 +1123,7 @@ td.sb-comment.sb-comment-history .history.third td.name a {
   color: #bfbfbf !important;
 }
 td.sb-comment.sb-comment-history .history.third td.name a:hover, td.sb-comment.sb-comment-history .history.third td.name a:focus, td.sb-comment.sb-comment-history .history.third td.name a:active, td.sb-comment.sb-comment-history .history.third td.name a:visited {
-  color: #bfbfbf !important;
+  color: #bfbfbf;
 }
 td.sb-comment.sb-comment-history .history.third td.body {
   color: #a2a2a2;

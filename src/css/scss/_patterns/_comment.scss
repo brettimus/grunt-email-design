@@ -10,7 +10,7 @@ td.sb-comment {
     padding-left: 10px;
     padding-right: 10px;
     &.lede {
-      color: #999999;
+      color: $gray-dark;
       font-size: $normal;
       padding-bottom: 0;
       padding-top: 20px;
@@ -18,7 +18,7 @@ td.sb-comment {
     }
     &.post-title {
       h2 {
-        border-bottom: solid 1px #dddddd;
+        border-bottom: solid 1px $gray-light;
         color: $black-light !important;
         font-size: $body-lg;
         margin-bottom: $body;
@@ -29,7 +29,7 @@ td.sb-comment {
     }
 
     &.name {
-      color: #999999;
+      color: $gray-dark;
       font-size: $small;
       padding-bottom: 0;
       vertical-align: bottom;
@@ -37,16 +37,8 @@ td.sb-comment {
         color: $black-light !important;
         font-size: $head-lg;
         font-weight: 700;
-
-        &:hover,
-        &:focus,
-        &:active,
-        &:visited {
-          color: #444444;
-        }
-        &:hover {
-          text-decoration: underline !important;
-        }        
+        @include link-states-color(#444444);
+        @include link-hover-underline;
       }
     }
 
@@ -66,21 +58,21 @@ td.sb-comment {
       padding-top: 0;
 
       &.lede {
-        color: lighten(#999999, 10%);
+        color: lighten($gray-dark, 10%);
         font-size: $body-sm;
         line-height: $body-sm*1.25;
         padding-top: 18px;
       }
       &.post-title {
         h3 {
-          border-bottom: solid 1px #dddddd;
+          border-bottom: solid 1px $gray-light;
           padding-bottom: 8px;
           margin-bottom: 8px;
         }
       }
 
       &.name {
-        color: #999999;
+        color: $gray-dark;
         font-size: $small;
         line-height: $body-lg;
         padding-top: 16px;
@@ -113,13 +105,8 @@ td.sb-comment {
             color: lighten($black-light, 30%);
             a {
               color: lighten($black-light, 25%) !important;
-              // mixin
-              &:hover,
-              &:focus,
-              &:active,
-              &:visited {
-                color: lighten($black-light, 25%) !important;
-              }  
+              @include link-states-color(lighten($black-light, 25%));
+
             }
           }
           &.body {
@@ -133,13 +120,7 @@ td.sb-comment {
             color: lighten($black-light, 40%);
             a {
               color: lighten($black-light, 35%) !important;
-              // mixin
-              &:hover,
-              &:focus,
-              &:active,
-              &:visited {
-                color: lighten($black-light, 35%) !important;
-              }  
+              @include link-states-color(lighten($black-light, 35%));
             }
           }
           &.body {
@@ -152,7 +133,7 @@ td.sb-comment {
     .ellipsis {
       width: 100%;
       td {
-        color: #999999;
+        color: $gray-dark;
         font-size: $body;
         padding-bottom: 20px;
         text-align: center;
