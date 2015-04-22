@@ -925,6 +925,18 @@ table.twelve center {
   min-width: 0;
 }
 
+table.columns .sb-text-pad,
+table.column .sb-text-pad {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+table.columns .sb-text-pad-extra,
+table.column .sb-text-pad-extra {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @media only screen and (min-width: 600px) {
   td.wrapper {
     height: auto !important;
@@ -991,7 +1003,7 @@ table.button.sb-button.offer:hover tr a {
 }
 
 .sb-cta .sb-cta-text {
-  padding: 30px 0 20px 0;
+  padding: 40px 0 20px 0;
   text-align: center !important;
 }
 .sb-cta .sb-cta-text a {
@@ -1013,31 +1025,23 @@ table.button.sb-button.offer:hover tr a {
   font-size: 14px;
 }
 
-.sb-panel,
-td.sb-post,
-td.sb-post-list {
+td.sb-post, td.sb-post-list {
   background: #ffffff;
   border-bottom: solid 1px #dddddd;
   border-left: solid 1px #dddddd;
   border-right: solid 1px #dddddd;
   border-top: solid 2px #dddddd;
 }
-.sb-panel.thick,
-td.thick.sb-post,
-td.thick.sb-post-list {
+td.thick.sb-post, td.thick.sb-post-list {
   border-bottom: solid 2px #dddddd;
   border-left: solid 2px #dddddd;
   border-right: solid 2px #dddddd;
   border-top: solid 4px #dddddd;
 }
-.sb-panel.ask,
-td.ask.sb-post,
-td.ask.sb-post-list {
+td.ask.sb-post, td.ask.sb-post-list {
   border-color: #ef412d;
 }
-.sb-panel.offer,
-td.offer.sb-post,
-td.offer.sb-post-list {
+td.offer.sb-post, td.offer.sb-post-list {
   border-color: #5aa5be;
 }
 

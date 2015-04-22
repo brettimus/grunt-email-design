@@ -1,6 +1,6 @@
 
 td.sb-post {
-  @extend .sb-panel;
+  @extend %panel;
 
   .header {
     width: 100%;
@@ -63,7 +63,7 @@ td.sb-post {
 }
 
 td.sb-post-list {
-  @extend .sb-panel;
+  @extend %panel;
 
   .header {
     width: 100%;

@@ -1,3 +1,5 @@
+// A few mods to ink so that it... ya know, works.
+
 center {
   min-width: 0;
 }
@@ -18,6 +20,19 @@ table.twelve {
 table.twelve center {
   min-width: 0;
 }
+
+table.columns .sb-text-pad,
+table.column .sb-text-pad {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+table.columns .sb-text-pad-extra,
+table.column .sb-text-pad-extra {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 @media only screen and (min-width: 600px) {
   td.wrapper {

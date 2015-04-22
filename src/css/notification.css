@@ -925,6 +925,18 @@ table.twelve center {
   min-width: 0;
 }
 
+table.columns .sb-text-pad,
+table.column .sb-text-pad {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+table.columns .sb-text-pad-extra,
+table.column .sb-text-pad-extra {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 @media only screen and (min-width: 600px) {
   td.wrapper {
     height: auto !important;
@@ -990,24 +1002,24 @@ table.button.sb-button.offer:hover tr a {
   color: #ffffff !important;
 }
 
-td.sb-comment {
-  padding: 20px 10px;
+td.sb-communication {
+  padding: 20px 15px;
 }
-td.sb-comment table.header {
+td.sb-communication .header {
   width: 100%;
 }
-td.sb-comment td {
+td.sb-communication td {
   padding-left: 10px;
   padding-right: 10px;
 }
-td.sb-comment td.lede {
+td.sb-communication td.lede {
   color: #999999;
   font-size: 18px;
   padding-bottom: 0;
   padding-top: 20px;
   text-align: center;
 }
-td.sb-comment td.post-title h2 {
+td.sb-communication td.title h2 {
   border-bottom: solid 1px #dddddd;
   color: #666666 !important;
   font-size: 24.5px;
@@ -1016,96 +1028,107 @@ td.sb-comment td.post-title h2 {
   padding-bottom: 8px;
   text-align: center;
 }
-td.sb-comment td.name {
+td.sb-communication td.name {
   color: #999999;
   font-size: 14px;
   padding-bottom: 0;
   vertical-align: bottom;
 }
-td.sb-comment td.name a {
+td.sb-communication td.name a {
   color: #666666 !important;
   font-size: 38.5px;
   font-weight: 700;
 }
-td.sb-comment td.name a:hover, td.sb-comment td.name a:focus, td.sb-comment td.name a:active, td.sb-comment td.name a:visited {
+td.sb-communication td.name a:hover,
+td.sb-communication td.name a:focus,
+td.sb-communication td.name a:active,
+td.sb-communication td.name a:visited {
   color: #444444 !important;
 }
-td.sb-comment td.name a:hover {
+td.sb-communication td.name a:hover {
   text-decoration: underline !important;
 }
-td.sb-comment td.body {
+td.sb-communication td.body {
   font-size: 21px;
   line-height: 28.35px;
   padding-bottom: 40px;
   padding-top: 10px;
 }
-td.sb-comment.sb-comment-history {
+
+td.sb-communications-digest {
   background: #f5f5f5;
 }
-td.sb-comment.sb-comment-history td {
+td.sb-communications-digest .header {
+  width: 100%;
+}
+td.sb-communications-digest td {
   padding-bottom: 0;
   padding-top: 0;
 }
-td.sb-comment.sb-comment-history td.lede {
+td.sb-communications-digest td.lede {
   color: #b3b3b3;
   font-size: 17.5px;
   line-height: 21.875px;
   padding-top: 18px;
+  text-align: center;
 }
-td.sb-comment.sb-comment-history td.post-title h3 {
+td.sb-communications-digest td.post-title h3 {
   border-bottom: solid 1px #dddddd;
   padding-bottom: 8px;
   margin-bottom: 8px;
 }
-td.sb-comment.sb-comment-history td.name {
+td.sb-communications-digest td.name {
   color: #999999;
   font-size: 14px;
   line-height: 24.5px;
   padding-top: 16px;
+  vertical-align: bottom;
 }
-td.sb-comment.sb-comment-history td.name a {
+td.sb-communications-digest td.name a {
   color: #999999 !important;
   font-size: 24.5px;
   font-weight: 700;
 }
-td.sb-comment.sb-comment-history td.name a:hover, td.sb-comment.sb-comment-history td.name a:focus, td.sb-comment.sb-comment-history td.name a:active, td.sb-comment.sb-comment-history td.name a:visited {
-  color: #999999 !important;
-  text-decoration: none !important;
+td.sb-communications-digest td.name a:hover, td.sb-communications-digest td.name a:focus, td.sb-communications-digest td.name a:active, td.sb-communications-digest td.name a:visited {
+  color: #8c8c8c !important;
 }
-td.sb-comment.sb-comment-history td.body {
+td.sb-communications-digest td.name a:hover {
+  text-decoration: underline !important;
+}
+td.sb-communications-digest td.body {
   color: #7b7b7b;
   font-size: 17.5px;
   line-height: 21.875px;
   padding-bottom: 12px;
 }
-td.sb-comment.sb-comment-history .history.second td.name {
+td.sb-communications-digest .sb-communication-history.second td.name {
   color: #b3b3b3;
 }
-td.sb-comment.sb-comment-history .history.second td.name a {
+td.sb-communications-digest .sb-communication-history.second td.name a {
   color: #a6a6a6 !important;
 }
-td.sb-comment.sb-comment-history .history.second td.name a:hover, td.sb-comment.sb-comment-history .history.second td.name a:focus, td.sb-comment.sb-comment-history .history.second td.name a:active, td.sb-comment.sb-comment-history .history.second td.name a:visited {
+td.sb-communications-digest .sb-communication-history.second td.name a:hover, td.sb-communications-digest .sb-communication-history.second td.name a:focus, td.sb-communications-digest .sb-communication-history.second td.name a:active, td.sb-communications-digest .sb-communication-history.second td.name a:visited {
   color: #a6a6a6 !important;
 }
-td.sb-comment.sb-comment-history .history.second td.body {
+td.sb-communications-digest .sb-communication-history.second td.body {
   color: #959595;
 }
-td.sb-comment.sb-comment-history .history.third td.name {
+td.sb-communications-digest .sb-communication-history.third td.name {
   color: #cccccc;
 }
-td.sb-comment.sb-comment-history .history.third td.name a {
+td.sb-communications-digest .sb-communication-history.third td.name a {
   color: #bfbfbf !important;
 }
-td.sb-comment.sb-comment-history .history.third td.name a:hover, td.sb-comment.sb-comment-history .history.third td.name a:focus, td.sb-comment.sb-comment-history .history.third td.name a:active, td.sb-comment.sb-comment-history .history.third td.name a:visited {
+td.sb-communications-digest .sb-communication-history.third td.name a:hover, td.sb-communications-digest .sb-communication-history.third td.name a:focus, td.sb-communications-digest .sb-communication-history.third td.name a:active, td.sb-communications-digest .sb-communication-history.third td.name a:visited {
   color: #bfbfbf !important;
 }
-td.sb-comment.sb-comment-history .history.third td.body {
+td.sb-communications-digest .sb-communication-history.third td.body {
   color: #a2a2a2;
 }
-td.sb-comment.sb-comment-history .ellipsis {
+td.sb-communications-digest .ellipsis {
   width: 100%;
 }
-td.sb-comment.sb-comment-history .ellipsis td {
+td.sb-communications-digest .ellipsis td {
   color: #999999;
   font-size: 21px;
   padding-bottom: 20px;
@@ -1113,7 +1136,7 @@ td.sb-comment.sb-comment-history .ellipsis td {
 }
 
 .sb-cta .sb-cta-text {
-  padding: 30px 0 20px 0;
+  padding: 40px 0 20px 0;
   text-align: center !important;
 }
 .sb-cta .sb-cta-text a {
@@ -1135,125 +1158,23 @@ td.sb-comment.sb-comment-history .ellipsis td {
   font-size: 14px;
 }
 
-td.sb-message {
-  padding: 20px 0;
-}
-td.sb-message p {
-  margin: 0 10px;
-}
-td.sb-message p.date {
-  color: #666666;
-  font-size: 18px;
-  margin-bottom: 8px;
-  margin-top: 15px;
-}
-td.sb-message p.date .on {
-  color: #999999;
-  font-size: 18px;
-}
-td.sb-message p.name {
-  color: #999999;
-  font-size: 14px;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-}
-td.sb-message p.name a {
-  color: #666666 !important;
-  font-size: 38.5px;
-  font-weight: 700;
-}
-td.sb-message p.name a:hover, td.sb-message p.name a:focus, td.sb-message p.name a:active, td.sb-message p.name a:visited {
-  color: #444444;
-}
-td.sb-message p.name a:hover {
-  text-decoration: underline !important;
-}
-td.sb-message p.subject {
-  color: #666666;
-  font-size: 31.5px;
-  font-weight: 700;
-  line-height: 37.8px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-td.sb-message p.body {
-  font-size: 21px;
-  line-height: 29.4px;
-  margin-bottom: 24px;
-}
-td.sb-message.history {
-  background: #f5f5f5;
-}
-td.sb-message.history p.lede {
-  border-bottom: solid 1px #cccccc;
-  color: #aaaaaa;
-  font-size: 28px;
-  padding-bottom: 4px;
-}
-td.sb-message.history p.date {
-  color: #888888;
-  font-size: 14px;
-  margin-bottom: 0;
-  margin-top: 15px;
-}
-td.sb-message.history p.date .on {
-  color: #999999;
-  font-size: 14px;
-}
-td.sb-message.history p.name {
-  color: #999999;
-  font-size: 14px;
-  margin-bottom: 0;
-  padding-bottom: 4px;
-}
-td.sb-message.history p.name a {
-  color: #888888 !important;
-  font-size: 31.5px;
-  font-weight: 400;
-}
-td.sb-message.history p.name a:hover, td.sb-message.history p.name a:focus, td.sb-message.history p.name a:active, td.sb-message.history p.name a:visited {
-  color: #888888 !important;
-  text-decoration: none !important;
-}
-td.sb-message.history p.subject {
-  color: #888888;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  text-align: center;
-}
-td.sb-message.history p.body {
-  color: #666666;
-  font-size: 18px;
-  line-height: 25.2px;
-  margin-bottom: 12px;
-}
-
-td.sb-comment,
-.sb-panel,
-td.sb-message {
+td.sb-communication, td.sb-communications-digest {
   background: #ffffff;
   border-bottom: solid 1px #dddddd;
   border-left: solid 1px #dddddd;
   border-right: solid 1px #dddddd;
   border-top: solid 2px #dddddd;
 }
-td.thick.sb-comment,
-.sb-panel.thick,
-td.thick.sb-message {
+td.thick.sb-communication, td.thick.sb-communications-digest {
   border-bottom: solid 2px #dddddd;
   border-left: solid 2px #dddddd;
   border-right: solid 2px #dddddd;
   border-top: solid 4px #dddddd;
 }
-td.ask.sb-comment,
-.sb-panel.ask,
-td.ask.sb-message {
+td.ask.sb-communication, td.ask.sb-communications-digest {
   border-color: #ef412d;
 }
-td.offer.sb-comment,
-.sb-panel.offer,
-td.offer.sb-message {
+td.offer.sb-communication, td.offer.sb-communications-digest {
   border-color: #5aa5be;
 }
 
