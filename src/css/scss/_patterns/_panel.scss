@@ -6,23 +6,6 @@
   border-right:  solid 1px $gray-light;
   border-top:    solid 2px $gray-light;
 
-  .title,
-  .lede {
-    margin-bottom: 15px;
-    margin-top: 20px;
-  }
-
-  h2.lede {
-    border-bottom: solid 2px #cccccc;
-    color: #999999;
-    font-size: $head-sm;
-    padding-bottom: 7px;
-
-    &.smaller {
-      font-size: $normal;
-    }
-  }
-
   &.thick {
     border-bottom: solid 2px $gray-light;
     border-left:   solid 2px $gray-light;

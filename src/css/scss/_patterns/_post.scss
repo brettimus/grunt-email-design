@@ -2,43 +2,62 @@
 td.sb-post {
   @extend .sb-panel;
 
-  h1.title {
-    font-size: $head-lg;
+  .header {
+    width: 100%;
+    .post-title {
+      h1, h2 {
+        text-align: center;
+      }
+      h1 {
+        font-size: $head;
+        line-height: $head *1.2;
+        margin-bottom: 16px;
+        margin-top: 24px;
+      }
+      h2 {
+        font-size: $head-sm;
+        line-height: $head-sm *1.2;
+        margin-bottom: 14px;
+        margin-top: 21px;
+      }
+    }
   }
 
-  h2.title {
-    font-size: $head;
-    line-height: 1.25*$head;
-  }
   .body {
-    color: #888;
-    font-size: $body;
-    line-height: 1.25*$body;
-
-    @include highlight-category;
+    width: 100%;
+    td {
+      color: #888;
+      font-size: $body;
+      line-height: 1.25*$body;
+      @include highlight-category;      
+    }
   }
   .footer {
-    color: #888;
-    font-size: $body-sm;
-    font-style: italic;
-    margin-bottom: 16px;
-    margin-top: 8px;
-    text-align: right;
+    width: 100%;
+    td {
+      color: #888;
+      font-size: $body-sm;
+      font-style: italic;
+      padding-bottom: 24px;
+      padding-top: 8px;
+      text-align: right;      
+    }
   }
 
-  // the top-level post
+  // the top-level post(s)
   &.sb-post-main {
-    .title {
-      margin-bottom: 20px;
-      margin-top: 25px;
-    }
     .body {
-      font-size: $body-lg;
-      line-height: $body-lg * 1.25;
+      td {
+        font-size: $body-lg;
+        line-height: $body-lg * 1.25;        
+      }
     }
     .footer {
-      font-size: $body;
-      margin-bottom: 25px;
+      td {
+        font-size: $body;
+        padding-bottom: 36px;
+        padding-top: 12px;      
+      }
     }
   }
 }
@@ -46,19 +65,45 @@ td.sb-post {
 td.sb-post-list {
   @extend .sb-panel;
 
-  h3.title {
-    font-size: $head-sm;
-    font-weight: 400;
-    @include highlight-category;
-
-    a {
-      color: #222222;
-      &:hover,
-      &:focus,
-      &:visited {
-        color: #444444 !important;
-        text-decoration: underline !important;
+  .header {
+    width: 100%;
+    td {
+      &.lede {
+        color: lighten($black-light, 25%);
+        font-size: $body;
+        padding-bottom: 12px;
+        padding-top: 16px;
+        text-align: center;
       }
-    }   
+
+      h4 {
+        border-bottom: solid 1px $gray-light;
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  .body {
+    width: 100%;
+    td {
+      &.post-title {
+        h3 {
+          color: lighten($black, 45%) !important;
+          font-size: $body-sm;
+          font-weight: 400;
+          padding-left: 8px;
+          margin-top: 8px;
+          @include highlight-category;
+
+          a {
+            color: lighten($black, 25%) !important;
+            font-size: $body-lg;
+            @include link-states-color($black);
+            @include link-hover-underline;
+          }
+        }
+      }
+    }
   }
 }

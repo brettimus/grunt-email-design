@@ -15,7 +15,7 @@
   &:focus,
   &:active,
   &:visited {
-    color: $color;
+    color: $color !important;
   }
 }
 

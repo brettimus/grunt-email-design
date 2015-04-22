@@ -1054,7 +1054,7 @@ td.sb-comment td.name a {
   font-weight: 700;
 }
 td.sb-comment td.name a:hover, td.sb-comment td.name a:focus, td.sb-comment td.name a:active, td.sb-comment td.name a:visited {
-  color: #444444;
+  color: #444444 !important;
 }
 td.sb-comment td.name a:hover {
   text-decoration: underline !important;
@@ -1111,7 +1111,7 @@ td.sb-comment.sb-comment-history .history.second td.name a {
   color: #a6a6a6 !important;
 }
 td.sb-comment.sb-comment-history .history.second td.name a:hover, td.sb-comment.sb-comment-history .history.second td.name a:focus, td.sb-comment.sb-comment-history .history.second td.name a:active, td.sb-comment.sb-comment-history .history.second td.name a:visited {
-  color: #a6a6a6;
+  color: #a6a6a6 !important;
 }
 td.sb-comment.sb-comment-history .history.second td.body {
   color: #959595;
@@ -1123,7 +1123,7 @@ td.sb-comment.sb-comment-history .history.third td.name a {
   color: #bfbfbf !important;
 }
 td.sb-comment.sb-comment-history .history.third td.name a:hover, td.sb-comment.sb-comment-history .history.third td.name a:focus, td.sb-comment.sb-comment-history .history.third td.name a:active, td.sb-comment.sb-comment-history .history.third td.name a:visited {
-  color: #bfbfbf;
+  color: #bfbfbf !important;
 }
 td.sb-comment.sb-comment-history .history.third td.body {
   color: #a2a2a2;
@@ -1262,28 +1262,6 @@ td.sb-message {
   border-left: solid 1px #dddddd;
   border-right: solid 1px #dddddd;
   border-top: solid 2px #dddddd;
-}
-td.sb-comment .title,
-td.sb-comment .lede,
-.sb-panel .title,
-td.sb-message .title,
-.sb-panel .lede,
-td.sb-message .lede {
-  margin-bottom: 15px;
-  margin-top: 20px;
-}
-td.sb-comment h2.lede,
-.sb-panel h2.lede,
-td.sb-message h2.lede {
-  border-bottom: solid 2px #cccccc;
-  color: #999999;
-  font-size: 28px;
-  padding-bottom: 7px;
-}
-td.sb-comment h2.lede.smaller,
-.sb-panel h2.lede.smaller,
-td.sb-message h2.lede.smaller {
-  font-size: 18px;
 }
 td.thick.sb-comment,
 .sb-panel.thick,
