@@ -969,23 +969,10 @@ table.button.sb-button.ask tr a {
   width: 100%;
 }
 table.button.sb-button.ask:hover tr td {
-  background: #f8dcd9 !important;
+  background: #ef412d !important;
   border: solid 1px #a91d0d;
 }
-table.button.sb-button.ask.filled tr td {
-  background: #ef412d;
-  border: solid 1px #a91d0d;
-}
-table.button.sb-button.ask.filled tr td a {
-  color: #eeeeee;
-}
-table.button.sb-button.ask.filled tr td a:visited, table.button.sb-button.ask.filled tr td a:focus {
-  color: #eeeeee !important;
-}
-table.button.sb-button.ask.filled:hover tr td {
-  background: #a91d0d !important;
-}
-table.button.sb-button.ask.filled:hover tr td a {
+table.button.sb-button.ask:hover tr a {
   color: #ffffff !important;
 }
 table.button.sb-button.offer tr td {
@@ -996,23 +983,10 @@ table.button.sb-button.offer tr a {
   width: 100%;
 }
 table.button.sb-button.offer:hover tr td {
-  background: #e0ecf0 !important;
+  background: #5aa5be !important;
   border: solid 1px #326c80;
 }
-table.button.sb-button.offer.filled tr td {
-  background: #5aa5be;
-  border: solid 1px #326c80;
-}
-table.button.sb-button.offer.filled tr td a {
-  color: #eeeeee;
-}
-table.button.sb-button.offer.filled tr td a:visited, table.button.sb-button.offer.filled tr td a:focus {
-  color: #eeeeee !important;
-}
-table.button.sb-button.offer.filled:hover tr td {
-  background: #326c80 !important;
-}
-table.button.sb-button.offer.filled:hover tr td a {
+table.button.sb-button.offer:hover tr a {
   color: #ffffff !important;
 }
 
@@ -1073,8 +1047,8 @@ td.sb-post .header .post-title h1, td.sb-post .header .post-title h2 {
   text-align: center;
 }
 td.sb-post .header .post-title h1 {
-  font-size: 35px;
-  line-height: 42px;
+  font-size: 31.5px;
+  line-height: 37.8px;
   margin-bottom: 16px;
   margin-top: 24px;
 }
@@ -1166,7 +1140,7 @@ td.sb-post-list .body td.post-title h3 a:hover {
   color: #cccccc;
   font-size: 14px;
   padding-bottom: 0;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .u-text-center {
