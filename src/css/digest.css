@@ -1006,6 +1006,7 @@ table.button.sb-button.offer:hover tr a {
 .sb-footer td.sb-footer-text {
   color: #888888;
   font-size: 14px;
+  padding-bottom: 20px;
   text-align: center;
 }
 .sb-footer a {
