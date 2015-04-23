@@ -2,16 +2,16 @@
 
 On your ask
 
--------------------------------------
-Looking for Thing in Place with Stuff
--------------------------------------
+---------------------------------------
+“Looking for Thing in Place with Stuff”
+---------------------------------------
 
 James ( ) said
 
-“Lorem ipsum dolor sit amet, consectetur
+Lorem ipsum dolor sit amet, consectetur
 adipisicing elit. Eum reiciendis veritatis enim incidunt ab eaque
 dolorem? Tenetur odio est magnam repellendus. Dignissimos odit
-doloribus, possimus voluptatibus vel sit aperiam nulla!”
+doloribus, possimus voluptatibus vel sit aperiam nulla!
 
 Reply to James' Comment » ( # )
 
@@ -19,20 +19,20 @@ Others have also chimed in!
 
 You ( # ) said
 
-“Lorem ipsum dolor sit amet, consectetur
+Lorem ipsum dolor sit amet, consectetur
 adipisicing elit. Eum reiciendis veritatis enim incidunt ab eaque
 dolorem? Tenetur odio est magnam repellendus. Dignissimos odit
-doloribus, possimus voluptatibus vel sit aperiam nulla!”
+doloribus, possimus voluptatibus vel sit aperiam nulla!
 
 Someone Else ( # ) said
 
-“Lorem ipsum. Dignissimos odit doloribus,
-possimus voluptatibus!”
+Lorem ipsum. Dignissimos odit doloribus,
+possimus voluptatibus!
 
 Another ( # ) said
 
-“Lorem ipsum dolor sit amet dignissimos odit
-doloribus. Possimus voluptatibus vel sit aperiam nulla!”
+Lorem ipsum dolor sit amet dignissimos odit
+doloribus. Possimus voluptatibus vel sit aperiam nulla!
 
 …
 

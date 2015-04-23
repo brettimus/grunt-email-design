@@ -1,0 +1,40 @@
+.sb-header-container {
+  background: #494849;
+  width: 100%;
+  .sb-header {
+    height: 32px !important;
+    padding: 4px 0;
+    img {
+      width: 128px;
+    }
+  }
+}
+
+.sb-community-header-container {
+  background: $white;
+  width: 100%;
+  .sb-community-header-image {
+    padding: 0 10px 10px 0;
+    height: 54px !important;
+    width: 54px !important;
+    img {
+      border-radius: 50%;
+      height: 54px;
+      width: 54px;
+    }
+  }
+  .sb-community-header {
+    // height: 45px !important;
+    color: lighten($gray-dark, 20%);
+    font-size: $small;
+    font-style: italic;
+    padding: 0;
+    vertical-align: middle;
+    h1 {
+      color: $gray-dark;
+      font-size: $body-lg;
+      font-style: normal;
+      margin: 0;
+    }
+  }
+}
