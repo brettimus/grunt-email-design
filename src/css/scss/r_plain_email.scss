@@ -1,0 +1,37 @@
+@import "./_vendor/ink";
+@import "./_vendor/ink_hacks";
+
+@import "./variables";
+
+@import "./_mixins/buttons";
+@import "./_mixins/highlight";
+@import "./_mixins/links";
+@import "./_mixins/plain";
+
+@import "./_patterns/body";
+@import "./_patterns/footer";
+@import "./_patterns/preview";
+@import "./_patterns/utilities";
+
+.sb-plain {
+  @include plain-text;
+}
+ // TODO padding is not working right now -- being overridden
+td.sb-plain-greeting {
+  padding-top: 12px;
+  padding-bottom: 0;
+}
+
+td.sb-plain-message {
+  padding: 8px 0;
+}
+
+td.sb-plain-sign-off {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+td.sb-plain-ps {
+  padding-top: 0;
+  padding-bottom: 0;
+}
