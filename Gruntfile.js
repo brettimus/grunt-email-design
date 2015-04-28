@@ -14,9 +14,8 @@ module.exports = function(grunt) {
               style: 'expanded'
             },
             files: {
-              'src/css/digest.css': 'src/css/scss/digest.scss',
-              'src/css/notification.css': 'src/css/scss/notification.scss',
-              'src/css/style.css': 'src/css/scss/style.scss'
+              'src/css/r_email.css': 'src/css/scss/r_email.scss',
+              'src/css/r_plain_email.css': 'src/css/scss/r_plain_email.scss',
             }
           }
         },

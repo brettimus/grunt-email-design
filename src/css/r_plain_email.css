@@ -904,6 +904,45 @@ body.outlook p {
     display: inherit !important;
   }
 }
+center {
+  min-width: 0;
+}
+
+table.container {
+  width: 100%;
+}
+
+td.wrapper {
+  padding: 10px 10px 0px 10px;
+  position: relative;
+}
+
+table.twelve {
+  width: 100%;
+}
+
+table.twelve center {
+  min-width: 0;
+}
+
+table.columns .sb-text-pad,
+table.column .sb-text-pad {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+table.columns .sb-text-pad-extra,
+table.column .sb-text-pad-extra {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  td.wrapper {
+    height: auto !important;
+    width: 600px !important;
+  }
+}
 .sb-body {
   background: #f4f4f4;
 }
@@ -914,6 +953,16 @@ body.outlook p {
 
 table.sb-body {
   padding-top: 15px;
+}
+
+.sb-footer td.sb-footer-text {
+  color: #888888;
+  font-size: 14px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.sb-footer a {
+  font-size: 14px;
 }
 
 .container.sb-preview-text td,
@@ -952,43 +1001,28 @@ table.sb-body {
   padding: 0 !important;
 }
 
-ol {
-  list-style-type: none;
+.sb-plain {
+  font-size: 16px;
+  line-height: 22.4px;
 }
 
-.sb-plain-container {
-  margin: 0 !important;
+td.sb-plain-greeting {
+  padding-top: 12px;
+  padding-bottom: 0;
 }
 
-table.container {
-  /*background: #fff;*/
+td.sb-plain-message {
+  padding: 8px 0;
 }
 
-td.wrapper.sb-first {
+td.sb-plain-sign-off {
   padding-top: 0;
+  padding-bottom: 0;
 }
 
-.sb-content-header {
-  background: #494849;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  min-height: 100px;
-}
-.sb-content-header tr td {
-  vertical-align: middle;
-}
-.sb-content-header h1 {
-  color: #fff;
+td.sb-plain-ps {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.sb-content-body {
-  background: #fff;
-}
-
-.sb-content-footer {
-  background: #fff;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=r_plain_email.css.map */

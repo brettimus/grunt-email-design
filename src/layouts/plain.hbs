@@ -6,15 +6,44 @@
 
     <title>{{ subject }}</title>
 
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/r_plain_email.css">
+
+    <style>
+      
+    </style>
   </head>
-  <body>
-    <table class="body">
+  {{!-- Weird body attributes are an iOS fix --}}
+  <body class="sb-body sb-body-white" width:100%; min-width:100%;>
+    {{!-- Outlook > 2007 --}}
+    <!--[if mso>
+    <table width="600" border="0" cellspacing="0" cellpadding="0" style="background:#ffffff;">
       <tr>
-        <td class="" align="" valign="top">
+       <td>
+    <![endif]-->
+    {{!-- Outlook <= 2007 --}}
+    <!--[if (IE)]>
+      <table width="600" border="0" cellspacing="0" cellpadding="0" style="background:#ffffff;">
+        <tr>
+         <td>
+    <![endif]-->
+    <table class="body sb-body sb-body-white sb-plain" width="100%" style="max-width: 600px; margin: 0 auto !important;">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
           {{ body }}
+          </center>
         </td>
       </tr>
     </table>
+    <!--[if (IE)]>
+       </td>
+      </tr>
+    </table>
+    <![endif]-->
+    <!--[if mso>
+       </td>
+      </tr>
+    </table>
+    <![endif]-->
   </body>
 </html>
