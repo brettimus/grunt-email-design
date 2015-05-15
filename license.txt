@@ -1,3 +1,5 @@
+The markup and styling of templates in this repository are property of Weathergram, Inc. (c) 2015 and may not be used without express permission from the company. All other code is subject to the original (MIT) license of the repository authored by Lee Munroe.
+
 The MIT License (MIT)
 
 Copyright (c) [2014] [Lee Munroe]
